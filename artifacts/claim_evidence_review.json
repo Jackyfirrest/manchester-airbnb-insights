@@ -1,0 +1,1962 @@
+{
+  "criteria": {
+    "review_type": "AI-assisted evidence review; not human assessment",
+    "reviewer_method": "OpenAI Codex interactive session model GPT-5, direct inspection of original reviews and frozen saved inputs; no external judge or model API call",
+    "review_date": "2026-09-30",
+    "labels": {
+      "supported": "Every material clause and qualifier is supported by the cited original review or reviews. A recurring claim requires at least two distinct cited supplied reviews supporting the same complete observation.",
+      "partially supported": "At least one material element is supported, but another clause, qualifier, recurrence assertion, excerpt, temporal implication, or current-condition implication is not fully supported.",
+      "unsupported": "The cited evidence supports none of the material claim.",
+      "contradicted": "The cited evidence directly conflicts with a material claim.",
+      "unclear": "The source language or relationship to the claim cannot be interpreted confidently."
+    },
+    "citation_checks": [
+      "Review ID occurs in the exact frozen request input",
+      "Citation date matches the supplied source",
+      "Quoted excerpt is an exact contiguous substring of the prepared source text"
+    ],
+    "semantic_checks": [
+      "Full original review supports the entire claim",
+      "Qualifiers and joined attributes are supported",
+      "Recurring wording has at least two distinct citations supporting the same full observation",
+      "A dated guest report is not converted into a verified current condition",
+      "No selected-review frequency is converted into population prevalence"
+    ],
+    "omission_definitions": {
+      "supplied_input_omission": "Important feedback was present in the review evidence supplied to the profile generator but missing or materially misrepresented in the profile.",
+      "selection_omission": "Important feedback was found in a reproducible sample of reviews excluded by automatic review selection; the generator never received it."
+    },
+    "evidence_policy": "The generated profile is the object being evaluated and is never evidence for itself. Evidence comes from data/reviews.csv.gz, checked against saved IDs/dates/text, and the exact frozen request inputs.",
+    "usage": {
+      "external_judge_calls": 0,
+      "profile_generation_calls": 0,
+      "api_token_usage": null,
+      "note": "This review used the active Codex session. Per-turn model-token usage is unavailable in the workspace, so no usage figure is invented."
+    },
+    "limitations": [
+      "AI-assisted labels are not independent human judgments.",
+      "Semantic entailment and importance involve judgment, especially for compound claims and translated/non-English reviews.",
+      "The supplied-input omission log records important findings, not every minor detail absent from a compact profile.",
+      "Only 96 of 5,089 excluded reviews were semantically inspected; rare selection losses may be missed.",
+      "The diagnostic sample is purposive and does not estimate quality for all Greater Manchester listings."
+    ]
+  },
+  "claim_judgments": [
+    {
+      "listing_id": 1633376659923996824,
+      "run_id": "listing_1633376659923996824",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the place was very clean.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "Two supplied reviews explicitly say clean: 1682624629198465028 and 1696423336366677461.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 1633376659923996824,
+      "run_id": "listing_1633376659923996824",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported that the space was very spacious and comfortable.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "Both supplied reviews say spacious, but only 1682624629198465028 says comfortable; recurrence of the combined observation is not established.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 1633376659923996824,
+      "run_id": "listing_1633376659923996824",
+      "claim_number": 3,
+      "statement": "One supplied review reported that the property looked better than the pictures.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1696423336366677461 explicitly says it looked better than the pictures.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 1633376659923996824,
+      "run_id": "listing_1633376659923996824",
+      "claim_number": 4,
+      "statement": "One supplied review reported a great stay and stated they already booked again.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1706354816126913098 says “Great stay” and “Already booked again”.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 1639943466139907458,
+      "run_id": "listing_1639943466139907458",
+      "claim_number": 1,
+      "statement": "One supplied review reported a severe issue upon arrival, stating that they were left stranded with nowhere to stay.",
+      "pattern": "isolated",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1677515306984760561 says the guests “found ourselves on the street,” supporting the severe stranded account; “upon arrival” is not explicit in the review.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 908313903709894761,
+      "run_id": "listing_908313903709894761",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the property is within walking distance or has easy access to the city center.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "911424145276930977 says walking distance to the centre; 912235421991486950 says easy city-centre access.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 908313903709894761,
+      "run_id": "listing_908313903709894761",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported smooth communication and responsiveness from the host.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "911424145276930977 reports good communication; 912235421991486950 reports responsiveness and quick, smooth organization.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 908313903709894761,
+      "run_id": "listing_908313903709894761",
+      "claim_number": 3,
+      "statement": "One supplied review reported that the room was clean and quiet.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "912235421991486950 explicitly describes the room as quiet and clean.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 1253637362965807207,
+      "run_id": "low_automatic",
+      "claim_number": 1,
+      "statement": "One supplied review reported that the room was too dirty to check in and that a cleaning fee deduction occurred upon refund.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1256475726723928190 attributes both non-check-in due to dirtiness and a £150 cleaning-fee deduction after a refund.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 811935840856297078,
+      "run_id": "listing_811935840856297078",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the host, Olu, was exceptionally friendly, welcoming, and helpful during their stay.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1233245423905945291 supports helpfulness; 1446319908568435269 supports exceptional friendliness. Neither citation alone or together directly establishes all three recurring adjectives, especially welcoming.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 811935840856297078,
+      "run_id": "listing_811935840856297078",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported that the accommodation is conveniently located for events at the nearby Co-op Live arena.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1472482104901066218 and 1515144341673713690 both describe walkable access for Co-op Live events.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 811935840856297078,
+      "run_id": "listing_811935840856297078",
+      "claim_number": 3,
+      "statement": "At least two supplied reviews expressed contrasting experiences regarding cleanliness, with one noting clean conditions and another reporting dirt and stains.",
+      "pattern": "mixed_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1439885876484198234 reports clean conditions; 1687725383392717290 reports dust, dirt and stains, establishing mixed supplied feedback.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 811935840856297078,
+      "run_id": "listing_811935840856297078",
+      "claim_number": 4,
+      "statement": "One supplied review reported that the bed was comfortable and provided a great night's sleep.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1472482104901066218 reports comfortable beds and a great night’s sleep.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 811935840856297078,
+      "run_id": "listing_811935840856297078",
+      "claim_number": 5,
+      "statement": "One supplied review reported that the bedroom TV did not work despite the host's attempts to fix it.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1524625944893174804 says the bedroom TV did not work and Olu tried to fix it.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 811935840856297078,
+      "run_id": "listing_811935840856297078",
+      "claim_number": 6,
+      "statement": "One supplied review reported unexpected noise from another guest staying in a third bedroom, which affected comfort.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1678329146727350827 attributes unexpected third-room guest noise and reduced comfort.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 1322576000460694635,
+      "run_id": "middle_automatic",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the host was very communicative, responsive, and supportive.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1377477057009126785 supports kindness/support; 1615242221146911625 supports quick responses. The citations do not both support the complete communicative-responsive-supportive observation.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 1322576000460694635,
+      "run_id": "middle_automatic",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported that the property is located on a very noisy main road with traffic and emergency vehicle sirens.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1698567858195135735 supports main-road noise and emergency sirens; 1439130688631351298 supports nearby emergency-service sirens but not the full main-road/traffic wording.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 1322576000460694635,
+      "run_id": "middle_automatic",
+      "claim_number": 3,
+      "statement": "One supplied review reported that the house was absolutely clean and everything was spot on.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1566028808008855476 says the house was absolutely clean and everything was spot on.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 1322576000460694635,
+      "run_id": "middle_automatic",
+      "claim_number": 4,
+      "statement": "One supplied review reported that the sofa bed was a bit uncomfortable.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1636971809543791501 explicitly says the sofa bed was a bit uncomfortable.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 1322576000460694635,
+      "run_id": "middle_automatic",
+      "claim_number": 5,
+      "statement": "One supplied review noted radiator trouble and an awkward sloping ceiling above the bath/shower if you are tall.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "no",
+      "ai_reason": "The full original 1593495108357984244 supports radiator trouble and an awkward sloping ceiling for tall guests. Its generated quote is not contiguous, recorded separately as a citation-text error.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 54070824,
+      "run_id": "listing_54070824",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the house was very clean and spotless.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "556401407933541194 and 640415093720994443 both explicitly report very clean/spotless conditions.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 54070824,
+      "run_id": "listing_54070824",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported quick and helpful communication from the host, while one supplied review reported a severe cancellation issue on the day of booking.",
+      "pattern": "mixed_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "556401407933541194 and 901359629546576706 support quick/helpful communication; 566119643919655901 reports a same-day cancellation that left the guest stranded.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 54070824,
+      "run_id": "listing_54070824",
+      "claim_number": 3,
+      "statement": "At least two supplied reviews reported that the property is in a great location near the city centre or tram stops.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "562122934469419267 supports a city-centre location; 650526696383979427 supports proximity to a tram stop.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 54070824,
+      "run_id": "listing_54070824",
+      "claim_number": 4,
+      "statement": "At least two supplied reviews reported special LED lighting features inside the house.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "541123711376532719 reports LED lights; 562122934469419267 independently reports the house lights creating a distinctive atmosphere.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 54070824,
+      "run_id": "listing_54070824",
+      "claim_number": 5,
+      "statement": "One supplied review reported an absence of garden furniture.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "926724194581670587 explicitly says there was no garden furniture.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 22551754,
+      "run_id": "listing_22551754",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the host Edward was exceptionally friendly, responsive, and helpful.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "770906992295609600 supports friendliness, responsiveness and help; 1057901591357635090 supports prompt responses/responsibility, but not the complete recurring friendly-helpful wording.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 22551754,
+      "run_id": "listing_22551754",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported that the bedroom was spacious and the bed was very comfortable.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "902011824563577525 supports a large room and comfortable bed; 868691925229359007 supports a massive, comfy room but does not explicitly identify the bed as comfortable.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 22551754,
+      "run_id": "listing_22551754",
+      "claim_number": 3,
+      "statement": "At least two supplied reviews described the location as peaceful and quiet, situated near scenic walking areas.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "256219623 supports quiet, peaceful surroundings and walks; 749829895385857336 supports quiet/peaceful location but not scenic walking areas.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 22551754,
+      "run_id": "listing_22551754",
+      "claim_number": 4,
+      "statement": "One supplied review noted that the scenic views were located specifically from the kitchen rather than directly from the double room.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "866586358850259299 explicitly corrects the view as being from the kitchen, not the double room.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 30782781,
+      "run_id": "heavy_automatic",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported a great, central location close to transport links and city attractions.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1615946252106202236 supports transport links and attractions; 576704362415894681 supports a great location but not the complete transport/attractions observation.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 30782781,
+      "run_id": "heavy_automatic",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported that the apartment was clean and spotless.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1155738586466926514 and 1239836312651853189 both explicitly report clean conditions.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 30782781,
+      "run_id": "heavy_automatic",
+      "claim_number": 3,
+      "statement": "At least two supplied reviews praised the friendly and helpful reception staff who accommodated luggage storage.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1474587114835741628 supports friendly staff and bag drop; 965132491231235558 supports luggage storage but not friendly/helpful staff. The complete combined observation does not recur in both.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 30782781,
+      "run_id": "heavy_automatic",
+      "claim_number": 4,
+      "statement": "At least two supplied reviews noted that the rooms can get quite noisy due to the central location or evening crowds.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "485353211159450076 links noise with the central location; 576704362415894681 reports Saturday-night group noise.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 30782781,
+      "run_id": "heavy_automatic",
+      "claim_number": 5,
+      "statement": "One supplied review reported a disappointment regarding a missing oven and hot water limitation late at night.",
+      "pattern": "isolated",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "596660074 supports disappointment about a missing oven, but contains no hot-water report. Hot-water review 605009570 was supplied but was not cited; no citation is silently substituted.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 20910508,
+      "run_id": "listing_20910508",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the cabin offers stunning views and a peaceful, private woodland setting.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "205524324 supports woodland, privacy and cosiness; 941929356308426033 supports views and peacefulness. The complete combined observation is not repeated by both citations.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 20910508,
+      "run_id": "listing_20910508",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported that the lodge was very clean and immaculate upon arrival.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1143377325560903608 says spotless; 1370319234852949149 says incredibly clean.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 20910508,
+      "run_id": "listing_20910508",
+      "claim_number": 3,
+      "statement": "At least two supplied reviews reported that Nic was a helpful and communicative host who provided thoughtful touches like local guides and welcome treats.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "478068877773949443 supports a helpful guidebook; 1508668535406918240 supports welcome treats/flowers. Neither citation supports all of helpful, communicative and both kinds of thoughtful touches as recurring.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 20910508,
+      "run_id": "listing_20910508",
+      "claim_number": 4,
+      "statement": "One supplied review noted that while the cabin is cosy, certain areas like the kitchen and bathroom can get very cold during winter.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1605797246270059351 explicitly describes a cosy cabin and cold kitchen/bathroom in winter.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 41869315,
+      "run_id": "listing_41869315",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the apartment is located in an industrial area, which some guests felt was unsafe or uninviting after dark.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1006420763848632727 supports an industrial area and feeling unsafe after dark; 1010803778245687762 supports feeling unsafe after dark but does not itself establish the industrial-area clause.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 41869315,
+      "run_id": "listing_41869315",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported that the check-in process involved off-site requirements, such as a security deposit requested by the management company.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "891139838789450130 supports a security deposit; 1195565519568701180 supports arduous off-site check-in. They are different requirements, so the complete example does not recur.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 41869315,
+      "run_id": "listing_41869315",
+      "claim_number": 3,
+      "statement": "One supplied review reported that the apartment lacked certain basic kitchen items like salt, pepper, or a tea towel.",
+      "pattern": "isolated",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "449811320722078668 supports missing oil, salt and pepper but does not mention a tea towel. Tea-towel reviews were supplied but not cited.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 41869315,
+      "run_id": "listing_41869315",
+      "claim_number": 4,
+      "statement": "One supplied review reported significant discomfort with the double bed because protruding springs could be felt through the mattress.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "556403007702776947 explicitly reports protruding bed springs and inability to sleep.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 41869315,
+      "run_id": "listing_41869315",
+      "claim_number": 5,
+      "statement": "At least two supplied reviews reported issues with cleanliness in certain areas, such as stained carpets or dirty dishes.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1010803778245687762 reports stained carpet and dirty dishes; 1038339941619740679 independently reports stained carpets.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 41869315,
+      "run_id": "listing_41869315",
+      "claim_number": 6,
+      "statement": "At least two supplied reviews reported positive experiences with host communication and clear check-in instructions.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "757168539183411044 supports easy instructions; 928183098939337453 supports clear instructions and prompt responses. Positive host communication is not explicit in both citations.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 8855792,
+      "run_id": "listing_8855792",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that Nicole was a welcoming and helpful host.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "88997210 and 89880042 both describe Nicole as welcoming/warm and knowledgeable/helpful about the area.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 8855792,
+      "run_id": "listing_8855792",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported that the house is conveniently located close to public transport like tram and bus stations for accessing the city center.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "129894661 and 168814174 both support nearby public transport and city-centre access.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 8855792,
+      "run_id": "listing_8855792",
+      "claim_number": 3,
+      "statement": "At least two supplied reviews reported that the house and rooms were clean.",
+      "pattern": "recurring_in_selected",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "129894661 reports a clean house; 331628140 reports a clean room.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 8855792,
+      "run_id": "listing_8855792",
+      "claim_number": 4,
+      "statement": "One supplied review reported that the room got very hot, the pillows were thin and uncomfortable, but the bed was very comfy and a fan was provided.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "159956546 explicitly reports heat, a fan, thin uncomfortable pillows and a comfortable bed.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 8855792,
+      "run_id": "listing_8855792",
+      "claim_number": 5,
+      "statement": "One supplied review reported an issue with communication and unresponsiveness upon arrival before eventually getting inside.",
+      "pattern": "isolated",
+      "ai_review_status": "partially supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "Full review 167226132 supports pre-arrival unresponsiveness and eventual entry, but the generated excerpt ends before the eventual-entry resolution.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 8855792,
+      "run_id": "listing_8855792",
+      "claim_number": 6,
+      "statement": "One supplied review reported difficulty using amenities such as the washing machine due to a locked door and slow response time.",
+      "pattern": "isolated",
+      "ai_review_status": "supported",
+      "ai_cited_ids_supplied": "yes",
+      "ai_citation_text_valid": "yes",
+      "ai_reason": "1210776061467374986 explicitly reports washing-machine access difficulty due to slow response and a locked door.",
+      "ai_reviewer_method": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    }
+  ],
+  "supplied_input_omissions": [
+    {
+      "listing_id": 811935840856297078,
+      "slot": 1,
+      "supplied_review_count": 82,
+      "ai_source_review_ids": "1362282898320273976; 1388326884291315555; 1672437037069052734",
+      "ai_source_dates": "2025-02-22; 2025-03-30; 2026-04-26",
+      "ai_important_feedback_missing_from_profile": "Shared-property/privacy configuration: host downstairs, other guests/third room, unlocked or accessible rooms; absent from profile.",
+      "ai_importance": "high",
+      "ai_notes": "AI-assisted finding after inspecting all 82 of 82 supplied reviews for this listing.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 811935840856297078,
+      "slot": 2,
+      "supplied_review_count": 82,
+      "ai_source_review_ids": "1495632599532926733",
+      "ai_source_dates": "2025-08-25",
+      "ai_important_feedback_missing_from_profile": "Unstable shower temperatures were supplied but omitted.",
+      "ai_importance": "medium",
+      "ai_notes": "AI-assisted finding after inspecting all 82 of 82 supplied reviews for this listing.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 811935840856297078,
+      "slot": 3,
+      "supplied_review_count": 82,
+      "ai_source_review_ids": "1558007459727716462; 1672437037069052734",
+      "ai_source_dates": "2025-11-19; 2026-04-26",
+      "ai_important_feedback_missing_from_profile": "Guests reported unsafe/rough surroundings and one left for a hotel; profile omits this location concern.",
+      "ai_importance": "high",
+      "ai_notes": "AI-assisted finding after inspecting all 82 of 82 supplied reviews for this listing.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 1322576000460694635,
+      "slot": 4,
+      "supplied_review_count": 33,
+      "ai_source_review_ids": "1406542513987518617",
+      "ai_source_dates": "2025-04-24",
+      "ai_important_feedback_missing_from_profile": "Noise qualification omitted: the guest reported road noise but still slept well.",
+      "ai_importance": "medium",
+      "ai_notes": "AI-assisted finding after inspecting all 33 of 33 supplied reviews for this listing.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 30782781,
+      "slot": 5,
+      "supplied_review_count": 105,
+      "ai_source_review_ids": "1698621803330879686",
+      "ai_source_dates": "2026-06-01",
+      "ai_important_feedback_missing_from_profile": "A supplied cleanliness complaint is omitted while the profile states recurring positive cleanliness.",
+      "ai_importance": "high",
+      "ai_notes": "AI-assisted finding after inspecting all 105 of 105 supplied reviews for this listing.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 30782781,
+      "slot": 6,
+      "supplied_review_count": 105,
+      "ai_source_review_ids": "1148490519506859189",
+      "ai_source_dates": "2024-05-03",
+      "ai_important_feedback_missing_from_profile": "Unexpected £40 dog fee and unhelpful handling were supplied but omitted.",
+      "ai_importance": "high",
+      "ai_notes": "AI-assisted finding after inspecting all 105 of 105 supplied reviews for this listing.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 30782781,
+      "slot": 7,
+      "supplied_review_count": 105,
+      "ai_source_review_ids": "1507251437702186181; 965132491231235558",
+      "ai_source_dates": "2025-09-10; 2023-08-24",
+      "ai_important_feedback_missing_from_profile": "Warm room/no air conditioning and fan provision were supplied but omitted.",
+      "ai_importance": "medium",
+      "ai_notes": "AI-assisted finding after inspecting all 105 of 105 supplied reviews for this listing.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 30782781,
+      "slot": 8,
+      "supplied_review_count": 105,
+      "ai_source_review_ids": "1498492003492412858; 605009570",
+      "ai_source_dates": "2025-08-29; 2020-02-13",
+      "ai_important_feedback_missing_from_profile": "Boiler/cold-bath and late-night hot-water limitations were supplied. The profile mentions hot water but cites an oven-only review, so the actual feedback is not properly represented.",
+      "ai_importance": "high",
+      "ai_notes": "AI-assisted finding after inspecting all 105 of 105 supplied reviews for this listing.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 41869315,
+      "slot": 9,
+      "supplied_review_count": 78,
+      "ai_source_review_ids": "449811320722078668",
+      "ai_source_dates": "2021-09-12",
+      "ai_important_feedback_missing_from_profile": "Severe inflexibility around check-in/check-out and item return was supplied but reduced to a generic requirements claim.",
+      "ai_importance": "high",
+      "ai_notes": "AI-assisted finding after inspecting all 78 of 78 supplied reviews for this listing.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 41869315,
+      "slot": 10,
+      "supplied_review_count": 78,
+      "ai_source_review_ids": "658574185996192415; 957075431767407083",
+      "ai_source_dates": "2022-06-27; 2023-08-13",
+      "ai_important_feedback_missing_from_profile": "Hot apartment/lack of air conditioning and inadequate fan provision were supplied but omitted.",
+      "ai_importance": "high",
+      "ai_notes": "AI-assisted finding after inspecting all 78 of 78 supplied reviews for this listing.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 41869315,
+      "slot": 11,
+      "supplied_review_count": 78,
+      "ai_source_review_ids": "1036874087568306502",
+      "ai_source_dates": "2023-12-01",
+      "ai_important_feedback_missing_from_profile": "A cut/non-working radiator and cold living area were supplied but omitted.",
+      "ai_importance": "medium",
+      "ai_notes": "AI-assisted finding after inspecting all 78 of 78 supplied reviews for this listing.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 41869315,
+      "slot": 12,
+      "supplied_review_count": 78,
+      "ai_source_review_ids": "1185433892120295220",
+      "ai_source_dates": "2024-06-23",
+      "ai_important_feedback_missing_from_profile": "Erroneous cancellation notice and hours spent resolving it were supplied but omitted.",
+      "ai_importance": "medium",
+      "ai_notes": "AI-assisted finding after inspecting all 78 of 78 supplied reviews for this listing.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 8855792,
+      "slot": 13,
+      "supplied_review_count": 87,
+      "ai_source_review_ids": "159956546",
+      "ai_source_dates": "2017-06-12",
+      "ai_important_feedback_missing_from_profile": "Shared bathrooms and inconvenient shower access two flights down were supplied but omitted.",
+      "ai_importance": "medium",
+      "ai_notes": "AI-assisted finding after inspecting all 87 of 87 supplied reviews for this listing.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 8855792,
+      "slot": 14,
+      "supplied_review_count": 87,
+      "ai_source_review_ids": "968000245269639483; 739021336664356207",
+      "ai_source_dates": "2023-08-28; 2022-10-16",
+      "ai_important_feedback_missing_from_profile": "Work-space limitations and no desk were supplied but omitted.",
+      "ai_importance": "medium",
+      "ai_notes": "AI-assisted finding after inspecting all 87 of 87 supplied reviews for this listing.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    }
+  ],
+  "selection_omissions": [
+    {
+      "listing_id": 30782781,
+      "slot": 1,
+      "excluded_review_count": 3995,
+      "ai_excluded_review_ids": "739686277190583158; 846255497058642993",
+      "ai_source_dates": "2022-10-17; 2023-03-13",
+      "ai_important_feedback_excluded_by_selection": "Two sampled excluded reviews report dim/minimal room lighting.",
+      "ai_importance": "medium",
+      "ai_notes": "AI-assisted finding from reproducible sample: inspected 24 of 3995 excluded reviews; not full-corpus review.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 30782781,
+      "slot": 2,
+      "excluded_review_count": 3995,
+      "ai_excluded_review_ids": "1195606202396974115",
+      "ai_source_dates": "2024-07-07",
+      "ai_important_feedback_excluded_by_selection": "Sampled excluded review reports no on-site parking and about £50 for 48 hours nearby.",
+      "ai_importance": "medium",
+      "ai_notes": "AI-assisted finding from reproducible sample: inspected 24 of 3995 excluded reviews; not full-corpus review.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 20910508,
+      "slot": 3,
+      "excluded_review_count": 932,
+      "ai_excluded_review_ids": "301044255",
+      "ai_source_dates": "2018-08-03",
+      "ai_important_feedback_excluded_by_selection": "Sampled excluded review qualifies seclusion: the main house can be seen, despite a private-feeling copse.",
+      "ai_importance": "medium",
+      "ai_notes": "AI-assisted finding from reproducible sample: inspected 24 of 932 excluded reviews; not full-corpus review.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 20910508,
+      "slot": 4,
+      "excluded_review_count": 932,
+      "ai_excluded_review_ids": "776681514105682152",
+      "ai_source_dates": "2022-12-07",
+      "ai_important_feedback_excluded_by_selection": "Sampled excluded review warns that one satnav route should be avoided.",
+      "ai_importance": "medium",
+      "ai_notes": "AI-assisted finding from reproducible sample: inspected 24 of 932 excluded reviews; not full-corpus review.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 41869315,
+      "slot": 5,
+      "excluded_review_count": 124,
+      "ai_excluded_review_ids": "667428302; 729508018784983272",
+      "ai_source_dates": "2020-09-24; 2022-10-03",
+      "ai_important_feedback_excluded_by_selection": "Two sampled excluded reviews report boiler/hot-water interruptions.",
+      "ai_importance": "high",
+      "ai_notes": "AI-assisted finding from reproducible sample: inspected 24 of 124 excluded reviews; not full-corpus review.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 41869315,
+      "slot": 6,
+      "excluded_review_count": 124,
+      "ai_excluded_review_ids": "897000077019562312",
+      "ai_source_dates": "2023-05-22",
+      "ai_important_feedback_excluded_by_selection": "Sampled excluded review reports a window that would not open and a possible damp/paintwork issue.",
+      "ai_importance": "medium",
+      "ai_notes": "AI-assisted finding from reproducible sample: inspected 24 of 124 excluded reviews; not full-corpus review.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 8855792,
+      "slot": 7,
+      "excluded_review_count": 38,
+      "ai_excluded_review_ids": "496874684",
+      "ai_source_dates": "2019-07-28",
+      "ai_important_feedback_excluded_by_selection": "Sampled excluded review reports failed late-night entry because the key safe was empty; guests booked a hotel. This is a previously known development case, not independent validation.",
+      "ai_importance": "high",
+      "ai_notes": "AI-assisted finding from reproducible sample: inspected 24 of 38 excluded reviews; not full-corpus review.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    },
+    {
+      "listing_id": 8855792,
+      "slot": 8,
+      "excluded_review_count": 38,
+      "ai_excluded_review_ids": "113600528",
+      "ai_source_dates": "2016-11-13",
+      "ai_important_feedback_excluded_by_selection": "Sampled excluded review notes no large shops or restaurants near the house.",
+      "ai_importance": "low",
+      "ai_notes": "AI-assisted finding from reproducible sample: inspected 24 of 38 excluded reviews; not full-corpus review.",
+      "ai_judgment_provenance": "AI-assisted review by OpenAI Codex session model GPT-5; no external judge/API call",
+      "ai_review_date": "2026-09-30"
+    }
+  ],
+  "excluded_review_sample": [
+    {
+      "listing_id": "30782781",
+      "review_id": "584648775",
+      "date": "2019-12-30",
+      "time_rank_quartile": "1",
+      "hash": "00286ccc5c3f44e0434a65239b9fd6f667a448755081da7d9ccab65b3ca37185",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Absolutely perfect!"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "635863754",
+      "date": "2020-07-08",
+      "time_rank_quartile": "1",
+      "hash": "003578d516ef0615beaa4b7ca0ae82b916645fff6f2ba8923bc22d74e4f0b46a",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Cant fault this place! Wonderfully kind and caring staff and beautiful touches around the apartment. The facilities are really high quality even down to the teas and shampoos provided."
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "666164431",
+      "date": "2020-09-20",
+      "time_rank_quartile": "1",
+      "hash": "008a033c5e7097227ac23e74b2acae5fa913fc4e4e3f1a7c1797ca97ce299c94",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Very nice place to stay"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "555894799",
+      "date": "2019-10-28",
+      "time_rank_quartile": "1",
+      "hash": "008acd1914ad37fdb64a5db5193df54c4d0c3a26dde60a14abb961a0b6db8d22",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Amazing!"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "658350167",
+      "date": "2020-08-30",
+      "time_rank_quartile": "1",
+      "hash": "00939af5c2fac20aa28a362f70b887d570b49dff9b5cec86ee0be11f0244dceb",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Amazing location right next to Canal Street. Super stylish, clean and quiet. Great value for money!"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "658354681",
+      "date": "2020-08-30",
+      "time_rank_quartile": "1",
+      "hash": "009be88c2fb93f8a0791bc985296ecf76cd2d0a9667decc80ba4975210a1e519",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "We have just spent a couple of nights at Whitworth Locke and we absolutely loved our stay! The room and decor was fab and definitely felt like a home away from home. We enjoyed having a few drinks at the bar and breakfast in the coffee shop in the morning. It is in a really great location too. We will definitely be returning when next in Manchester :)"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "462871419571225032",
+      "date": "2021-09-30",
+      "time_rank_quartile": "2",
+      "hash": "001807c5b2120ad78731ec06da6f9d877b8729f371f5d1ac7377df34098b3e22",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Great place!"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "699866888708623578",
+      "date": "2022-08-23",
+      "time_rank_quartile": "2",
+      "hash": "0043c8c6a04f4530a642df560001c1d745e6bbcc5b26bdfa8e5da5bac85e6389",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Perfect stay"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "625912816119368342",
+      "date": "2022-05-13",
+      "time_rank_quartile": "2",
+      "hash": "005c2c75a57f8debe6133564cf1056aa2b0a1daff826cc81fcc09ebc2c5016d8",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Perfect stay"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "494793854234147810",
+      "date": "2021-11-13",
+      "time_rank_quartile": "2",
+      "hash": "00722b4eb447d01df05b3bbcf7eeb01b1591ff8d9053c3fec02bc9e12dcb89f8",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "stylish apartment, easy access and great location!"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "739686277190583158",
+      "date": "2022-10-17",
+      "time_rank_quartile": "2",
+      "hash": "007d4e8c0ef8318f13b2a0ada89cbf6008f7a8b3e17fcd0ae0265f754d6cd750",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Great location, design and value. Staff were super friendly and the communal areas were great. The room was darker than the photos and didn’t have a super bright light in the room but it was cosy! And could have used a comfy seating area. Overall, really enjoyed our stay."
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "791912388767208730",
+      "date": "2022-12-28",
+      "time_rank_quartile": "2",
+      "hash": "0092fbdbcdb7dee7756797837e14d63231950fb607fdcd903a0ee2f4cb1fad4e",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Great place in a great location"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "839739727568380289",
+      "date": "2023-03-04",
+      "time_rank_quartile": "3",
+      "hash": "00752b437d96d979dd69cb95734c5215df33938726d0708a85e9123fbf3b16db",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Nice place for a decent price.  The bed was comfortable and there were some good amenities for the price we paid. The place was nice and clean too"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "912196564022385610",
+      "date": "2023-06-12",
+      "time_rank_quartile": "3",
+      "hash": "00777239dbccd997000828f8b6d95b4bc20a3404e33ab77afbb74972e3a2dae8",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Loved our stay, beautiful decor and facilities and a gorgeous cafe downstairs, highly recommend"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "896987582898006135",
+      "date": "2023-05-22",
+      "time_rank_quartile": "3",
+      "hash": "00858850ba92ef6103afd5dd52ae0157ae7a50a30a81481084e877c9e5d7c1b5",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Très bon séjour"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "1195606202396974115",
+      "date": "2024-07-07",
+      "time_rank_quartile": "3",
+      "hash": "00a102513748f9dbf78c5c1073ace1f977e45ea9e5cf4519415db5d1d9c3b001",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "We stayed here (as a couple) ahead of a gig Castlefield Bowl. The location was handy for the gig and restaurants. There is no car parking and so we parked in the NCP Manchester Palace which cost c £50 for 48 hrs.<br/>The room was very clean, modern and had what we needed. The place is in an apart- hotel with reception and bar. Good location."
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "856373541399031825",
+      "date": "2023-03-27",
+      "time_rank_quartile": "3",
+      "hash": "00b5496503a659c158c69de2be566730a9e810a83eee4164985b18a47e1c3ebb",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Lovely room. Friendly staff. Good amenities. Definitely worth the nightly rate if you're there for a while and can make use of the rooms facilities. Location could be more central but perhaps then the building wouldn't be as characterful. Overall would recommend."
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "846255497058642993",
+      "date": "2023-03-13",
+      "time_rank_quartile": "3",
+      "hash": "00ee3ca6b2e026ae8c5737ffb6e063e7b6a7d52e97b4c42c095218652ec0d1b1",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Bed was super comfortable! However, there was minimal dim lighting. Quite hard to do makeup or see anything properly"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "1588433421762863653",
+      "date": "2025-12-31",
+      "time_rank_quartile": "4",
+      "hash": "002550798a6458b8791ac94701cec135735b14b5f3611bc804d575e8674f8554",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Really enjoyed my stay at Whitworth Locke - check in was easy, the room was clean and the hotel was quiet and well situated. Thanks!"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "1484716956407414233",
+      "date": "2025-08-10",
+      "time_rank_quartile": "4",
+      "hash": "003aa487d3da6964f02bc71166189ee5f17f413f9e8a5b190300cea4e45d3c4b",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Absolutely stunning find! Perfectly located and great amenities. The staff were super friendly and helpful when needed. Only note would be we stayed over a weekend and our place was next to the main road which had lots of bars across the street so just to keep in mind for noise."
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "1497804830654034060",
+      "date": "2025-08-28",
+      "time_rank_quartile": "4",
+      "hash": "004d443f4f9bf39e19f34baa14ce254d40e904748842551f73f098c84566d694",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Little gem! Comfortable and exceptionally clean. Little bit noisy in the morning as we were a room beside the stairwell with people coming and going."
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "1479717027437625261",
+      "date": "2025-08-03",
+      "time_rank_quartile": "4",
+      "hash": "007b8c604f632dff4c37e26e0ef2bb065462a13d71b4b9aaa583d5ee37ed8d5e",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "I booked for 2 people for 4 days and I have to say that we were Really surprised in a very good way of the quality of the room for the price we paid. I recommend 100%."
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "1328224330636045595",
+      "date": "2025-01-06",
+      "time_rank_quartile": "4",
+      "hash": "00920c115a4e16f4456abd35dc077f7fafe7bcd571f883821f527a265f052620",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Parfait"
+    },
+    {
+      "listing_id": "30782781",
+      "review_id": "1376824362781738313",
+      "date": "2025-03-14",
+      "time_rank_quartile": "4",
+      "hash": "00ad442ef1365ac69f59ce1f84d9fda879d316479a73a7e5381fc05d7fd5cd8f",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Beautiful apartment, ideal location. great host!"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "419122255",
+      "date": "2019-03-03",
+      "time_rank_quartile": "1",
+      "hash": "016c2d7fbd19f7e5c1d7e9f7d0d35342265b6491a00e83d88442bd0a84b31f2c",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "The cabin was great. Perfect spot and so nicely decorated inside. Super cosy and would recommend to anyone!<br/>Nic was a great host and couldn’t help us enough with anything we needed"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "462696495",
+      "date": "2019-06-02",
+      "time_rank_quartile": "1",
+      "hash": "03c6126a6d778fd4151e01706e4563cdec79036f6937bf8c56acef77bc112b19",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Absolutely loved our weekend away at this perfect little retreat! Everything was so well thought out and the little touches around the cabin were just lovely! Nic was so helpful with places to go to eat and drink and as it was my boyfriends birthday she very kindly put up a Happy Birthday banner which was a really lovely gesture. Our new home from home! We couldn't fault it at all and will definitely be returning! Thanks again Nic :-)"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "301044255",
+      "date": "2018-08-03",
+      "time_rank_quartile": "1",
+      "hash": "058ddf2aa27c367eac052195eb65a9d0f3e3352ad73713186c51c852f378a1b3",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "The cabin is a grat space to stay, not totally secluded as the house can be seen but it is in a little copse overlooking the valley; great to go to sleep with the blinds up watching the lights on the opposite hillside twinkling through the trees.<br/>It has everything needed for a comfortable and fairly unique stay. The decking with seating is a real bonus. It is an easy walk down into Diggle (less easy back up the hill!) where you can get on the Huddersfield Narrow Canal for a walk to Uppermill, there are a couple of good cafes on the canal for breakfast or lunch."
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "440689176",
+      "date": "2019-04-21",
+      "time_rank_quartile": "1",
+      "hash": "05bfbdf2827957c1b8c60d02acddee35e164645698047d8031dd2762e198a8d5",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Stayed here over a sunny easter weekend with my wife and two year old son. The whole setting is stunning and the cabin is perfect!Well stocked and beautifully decorated. We barbecued all day and sat by the fire all night. The surrounding areas are beautiful and there is lots to see and do. Nic is a lovely host who couldn’t do enough for us! Bliss"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "252333915",
+      "date": "2018-04-10",
+      "time_rank_quartile": "1",
+      "hash": "077c4f0b2e9c314ff5cf69d5fb265c3311aabd67f68455092ba23dd410f59432",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "A cosy and comfortable cabin with gorgeous views surrounded by chickens! Incredibly well equipped and furnished beautifully, we had everything we needed here. Had a wonderful night and wished we could have stayed longer!"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "212954253",
+      "date": "2017-11-19",
+      "time_rank_quartile": "1",
+      "hash": "081f68897f15ce56f0c06a45e481e2b7fd0a820fef1d10d2ba66001f03ea8cf3",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Thanks for an amazing time whilst hosting us at the cabin. An unbelievable location with stunning views.  Excellent communication and help throughout. We will definately be back : ) All the best, Simon and Nicole"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "509232507670976239",
+      "date": "2021-12-03",
+      "time_rank_quartile": "2",
+      "hash": "011bfd1f6289dc3c7ac5d93f525c1e7b42b2058f7288dc8c794ab13b5bea4139",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Really nice secluded location"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "705065729",
+      "date": "2020-10-30",
+      "time_rank_quartile": "2",
+      "hash": "02331a5bb016c3d00b35878d0dc7ba6fe3e141d41bc803c721c61acd4946cdc0",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Great place, perfect location!"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "454151920499920758",
+      "date": "2021-09-18",
+      "time_rank_quartile": "2",
+      "hash": "02f68488fd715a4435d5d1c8df8195ca217f5db581e221eb099aa97a48176110",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Gorgeous secluded stay, plenty of local walks through the town and along the canal. Very pretty town within walking distance for independent shops cafes and bars, and pubs within walking distance too. The Peak District is stunning, with the location of the tiny house perfect to relax and enjoy the views in front of the fire pit. The tiny house was a very comfortable stay and Nic was very helpful to communicate with and very accommodating. Would recommend to anyone looking for a peaceful getaway!"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "423642651531955322",
+      "date": "2021-08-07",
+      "time_rank_quartile": "2",
+      "hash": "03237f020523a46d845b35a4f3370e83858a6d56e346b21fce0fec194601ca26",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Nics cabin is a beautiful and curated space with thoughtful touches and mindful accessibility.<br/>Nic and partner were incredible hosts providing extra information and a hamper.<br/>The cleanliness of the cabin was outstanding, the location is profoundly beautiful with a separate path that helps it feel isolated.<br/>There is outdoor fire pit, large fridge and running heated septic tank.<br/>Highly recommend this place, hope it stays as secluded and wonderful !!"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "613539634",
+      "date": "2020-03-02",
+      "time_rank_quartile": "2",
+      "hash": "03fbc6e4cb6c2dd07ec57e2ddd77b5197a5ef062e01384a719ea3321a97efa71",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "We loved our stay in Diggle. The place is absolutely beautiful and we have already recommended it to so many of our friends. Nic was a great host and this shone through her friendliness, knowledge and recommendations. We miss the chickens already!"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "558768248",
+      "date": "2019-11-03",
+      "time_rank_quartile": "2",
+      "hash": "059cf144c171e8478a3091bfdcb5a314fd400ec70e1361848a1cbeab2a922179",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Nic's place is just perfect. It has everything that you could possibly need and the extras! The views are beautiful. Her chickens are very friendly and love chopped up apples. Would recommend to anyone looking for a peaceful break."
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "917204955715305123",
+      "date": "2023-06-19",
+      "time_rank_quartile": "3",
+      "hash": "00b76e210b17445508ca88891932f61fe7096c0621fd16b8030a3a393b2bda83",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Couldn’t have asked for much more with this stay. Had everything we needed. Nic was a great host who made it a very welcomed stay."
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "749089055622604411",
+      "date": "2022-10-30",
+      "time_rank_quartile": "3",
+      "hash": "01520f6ebc091bb646081656935b12aa2c12526aec8f43828b5b5f1677ee0bf1",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "We had a great stay at Nic’s place.  The communication ahead of time was efficient, check in was very easy and the place (and view) is beautiful. Her recommendations were abundant -  we enjoyed a lovely reservoir walk, as well as a few breakfast/dinners in the local places. We look forward to coming back!"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "573073759688454470",
+      "date": "2022-03-01",
+      "time_rank_quartile": "3",
+      "hash": "021fdfc99f71071e9410993b6876f1ed9237dcd1df1504d087b95fd61989d17e",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Amazing stay and so peaceful with everything you could need"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "883217601250459798",
+      "date": "2023-05-03",
+      "time_rank_quartile": "3",
+      "hash": "022c54d32d353e0d9db701e9099448a3b669d8964a713a16f714740bf5f99b30",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Definitely an amazing stay"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "776681514105682152",
+      "date": "2022-12-07",
+      "time_rank_quartile": "3",
+      "hash": "04350f4f316f59986294b4d9d09fb9604bc117ed302a64b06d1beeecaaa4e41a",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "We absolutely loved our stay here, wholeheartedly recommend. Great if you’re looking for a peaceful, cosy, cold-weather break. Though with all the outdoor furniture and pizza oven I’m sure it’d be lovely in summer too! We were really sad to leave and will remember our time here for a long time. Make sure you read the host instructions though before you drive there — there’s one road that satnav May take you down to which is best avoided. Thank you Nic for having us at such a great little place!"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "637518078119304813",
+      "date": "2022-05-29",
+      "time_rank_quartile": "3",
+      "hash": "04f145b4181033e6fe79fa72e08e4799c4a03dc34f96f7906609d42fd299aba9",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Perfect stay in an amazing location. Everything there we needed for a few days stay in a beautiful location. Nic was a perfect hostess and anything we needed she was on had for. Will defo stay again xx"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "1550042017399951549",
+      "date": "2025-11-08",
+      "time_rank_quartile": "4",
+      "hash": "006c82313a6f6e2c45c43d861bd23332495e77850a9b2c191b2af0a405dce7b2",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Had a wonderful time, beautiful cabin in a beautiful area. lovely escape from the norm. <br/>We would definitely stay again."
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "1139720893648083223",
+      "date": "2024-04-21",
+      "time_rank_quartile": "4",
+      "hash": "014729e7b39412ecc41fce1cd8bdadaf93310f5aa96db3f14c4ae649d2a51c8b",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "We spent 2 nights here for our 7th wedding anniversary. Nic was a lovely caring host. The retreat had everything we needed including condiments (we brought our own but we know to pack lighter next time)<br/>It was so peaceful, private and relaxing. The floor to ceiling windows really did emphasise the landscape. The animals were so friendly and made our stay. We mostly enjoyed the laughing ducks. <br/>Thank you for a wonderful stay, we can’t wait to return for our 8th Wedding anniversary next year. <br/>Ange & Joe x"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "1315174391862558048",
+      "date": "2024-12-19",
+      "time_rank_quartile": "4",
+      "hash": "04718367068601f687295de620a253ef4aa2aee05d0a83f4b9473c4a8bdd5439",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "My second visit m here and it was exactly what I needed. Nic and her husband were very helpful and made my stay feel super comfortable. Such lovely people and such an amazing beautiful place to stay. I will be visiting one a year at the very least. Thank you Nic x"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "1388409361411394315",
+      "date": "2025-03-30",
+      "time_rank_quartile": "4",
+      "hash": "075348d5de30d03eef8f51e8471f0b9919accbfba68ef5a3d552a3f801047c8c",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "a beautiful place to stay with gorgeous views, lots of places to explore in the peaks around Nics place (i used strava maps to find routes). the local villages are also lovely, there’s a big tesco about 10/15 mins drive away, manchester also isn’t far.<br/>the lodge it’s self was great, bed is super comfortable and kitchen has everything you could need to do your own cooking:) the heaters are great at warming the place up quickly, it also has big doors to<br/>open in the summer (we went when it was wet and windy so didn’t open them) <br/>the horse & foal in the opposite field were also very friendly:)<br/>thanks again nic! great place to stay 🌟🌸💖🌲x"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "1320937033442398261",
+      "date": "2024-12-27",
+      "time_rank_quartile": "4",
+      "hash": "07ab33b220cea74c71dad60699f416a0cb38b31658bf18b8c82db4353fb58d5d",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Amazing !!!!!!"
+    },
+    {
+      "listing_id": "20910508",
+      "review_id": "1191233580604512521",
+      "date": "2024-07-01",
+      "time_rank_quartile": "4",
+      "hash": "07e1c8bc5d1de9fc7dc53b331f7ce2967f764b809508198d3e15cdeb77fcfa60",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Exactly what we both needed. Nic was super clear and with good communication and left us to just enjoy the space and the peace - would deffo recommend!"
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "397567671836422699",
+      "date": "2021-07-02",
+      "time_rank_quartile": "1",
+      "hash": "008f91dd44911a1ca1a18713d461b37e1b6bb8ead342b2b305993a059522cfe0",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Nice loft！very clean！"
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "522316397756570157",
+      "date": "2021-12-21",
+      "time_rank_quartile": "1",
+      "hash": "020804cf49fe50b822334113e6ac786b26d08a6d542d38839137cd67cfdb5387",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Cosy and convenient"
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "703603522",
+      "date": "2020-10-25",
+      "time_rank_quartile": "1",
+      "hash": "09a94c06e99a4379473dd8dcb5ca1661c7bb437d948b2bd198711dd3a33aea0f",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "A great place to stay and very close to the town centre a easy fifteen minute walk and plenty of local shops and takeaways overall would highly recommend to anyone"
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "667428302",
+      "date": "2020-09-24",
+      "time_rank_quartile": "1",
+      "hash": "2053a38d34fa12caf0c54a565343749f3f2a975596d45b3ebf985d1a20d935da",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Overall an okay stay. Could've been better.<br/>Kitchen could do with the basics i.e milk and bread. (did state there would be stuff in the fridge but there wasn't)<br/>Had to wait for hot water 2 mornings as the boiler some how stopped working."
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "530940805834916936",
+      "date": "2022-01-02",
+      "time_rank_quartile": "1",
+      "hash": "210f43948acd2122bf8bca6ed8ee7eb744a75b1164101fd7c445ad7ca954666d",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Wonderful and nice place, I recommend it.  We will go back more often.  100% cleaning 100% security great location, the owner is to be congratulated.  Very very very good."
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "409198351404209899",
+      "date": "2021-07-18",
+      "time_rank_quartile": "1",
+      "hash": "25f4df7ad22066d1759ce707e556b5af784cae29584ae4fa2e08bbb5f2ed6698",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Nice gaff, sketchy area at first but right next to town"
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "729508018784983272",
+      "date": "2022-10-03",
+      "time_rank_quartile": "2",
+      "hash": "05c1cbf8f510454ecf560dcd008339109aa21510922667938230f96819d8b656",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Lovely place with everything you need. Clean and tidy. There was a problem with the hot water the first night. Sent a few messages to the host which was responded to a few hours later and they sent someone the next day to fix it. The area is close to the centre, but feels like a bit of a dodgy area. Wouldn’t want to walk around at night on my own."
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "548332901598604836",
+      "date": "2022-01-26",
+      "time_rank_quartile": "2",
+      "hash": "07760faacbc9c62f8236b576c76731211002b9c9eb47517b6d8b6397c151015c",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Great place! Looks even better in person… very very spacious. Check in was simple and early check-in is always a plus! <br/>Amazing communication throughout our stay and definitely worth the price!<br/>Manchester’s hidden gem 100%"
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "618640993800142147",
+      "date": "2022-05-03",
+      "time_rank_quartile": "2",
+      "hash": "0e5d58ab63190639ecbfdef11d4d7fe311aa1d45f72f98d23acd859b671be90a",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "walking distance to city centre and lovely food places/pub at the end of the street."
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "622232542685369662",
+      "date": "2022-05-08",
+      "time_rank_quartile": "2",
+      "hash": "10db8e57e25099655a69a8304f180b4cd75c6246bfcb95896d12a2d770a16a10",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Aparment just as shown in the pictures. Quick 10 minute walk to the city centre! Check-in and out were smooth. Would recommend :)"
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "567228026978183177",
+      "date": "2022-02-21",
+      "time_rank_quartile": "2",
+      "hash": "14e35ef098c73cb47173fef022eefe47831f916c3936e8baf64966d817b1b384",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "A lovely stay in a beautiful apartment, would love to stay again! It was a bit of a walk into the city centre, but not too bad overall. Amazing waterfall shower, also there was free on street parking, and the beds were so comfy!"
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "727340326537472158",
+      "date": "2022-09-30",
+      "time_rank_quartile": "2",
+      "hash": "15faa3b3b83dcd8d36599ef18dad68428f3bb979efa83a99ec15ec334e59c7c4",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Great location for an apartment if you need easy access to Manchester City centre, more specifically, the AO Arena. Very clean, well equipped, not we were around long enough to use everything fully. Shower had amazing power, especially after a rough night. Contact with agency was quick and simple. Easy enough to find, parking outside with cameras so car felt very safe."
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "737490551106730681",
+      "date": "2022-10-14",
+      "time_rank_quartile": "3",
+      "hash": "0b2e47e3d1b0d48d8b5aa507e3faf8a71643d5e2d466a2257260158204deb2ad",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "The place was lovely. Nice and Morden cosy and comfortable, all the appliances were new and clean. <br/>Travelling around was easy especially as we didn’t have a car on this trip. <br/>Pillo Rooms responded instantly if contacted with any quires. <br/>Would stay again."
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "810014783595077999",
+      "date": "2023-01-22",
+      "time_rank_quartile": "3",
+      "hash": "0b3abb8809dd4b977b853a16565931ad61237e2eb6a0ef9b9caf46c589ee4a51",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Logement propre, communication facile. Correspond aux photos.<br/>Je recommande :)"
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "791914780586039708",
+      "date": "2022-12-28",
+      "time_rank_quartile": "3",
+      "hash": "11549cebbcdc404e39ad6d70b0cbd019bdbdc1748da225d24e4ee8c3f3cd9b55",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "A very well managed apartment in Manchester."
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "795509672277443235",
+      "date": "2023-01-02",
+      "time_rank_quartile": "3",
+      "hash": "163564251e40254ea96dc21a5fb7703cfae8801d5928d095abce92cd343237cf",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Great apartment close to central will be staying again"
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "758553410898281484",
+      "date": "2022-11-12",
+      "time_rank_quartile": "3",
+      "hash": "16aa984be5c67396d37337869200af9e67cf39ec87602548a99df4b3685c625d",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Really nice accommodation and easy access"
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "762943353502689135",
+      "date": "2022-11-18",
+      "time_rank_quartile": "3",
+      "hash": "1a21d9cbcd7fb93119aa4270c534781333a6cb0f682b0e163d8528dbd26b817b",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "The apartment itself was lovely, however we did have a few issues during our stay."
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "863579866344810526",
+      "date": "2023-04-06",
+      "time_rank_quartile": "4",
+      "hash": "00ef34c37cbf0bb20b5aeb7fbeaa963c31db31ad17d1f1ea29a733bd64281ae7",
+      "selection_reason": "ascii_punctuation_only",
+      "original_comment": "-"
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "906429385061630853",
+      "date": "2023-06-04",
+      "time_rank_quartile": "4",
+      "hash": "042e9d233d96d276cfccbae48ecc963a54a6352064075eb7a9d037e55d735a58",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Stayed here for a Coldplay concert - location was 15 mins away from the Arndale, and we could get an Uber to the Etihad for £8. Great space, providing privacy."
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "845528819147918670",
+      "date": "2023-03-12",
+      "time_rank_quartile": "4",
+      "hash": "098382106b9ffd543ebec3d8a0db431a44938f48776cef663d01f5650f7c5b38",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Had a great 2 night stay, only a short walk to the Manchester arena and retail shops. Great communication with the host, quick to reply to any questions we had, will be staying here again in the future"
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "840419726689696422",
+      "date": "2023-03-05",
+      "time_rank_quartile": "4",
+      "hash": "111f48276e22ba53521af1037b89d298f9506f57f260ded068c3b570ed9f897f",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "great place, no complaints"
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "834005033738900266",
+      "date": "2023-02-24",
+      "time_rank_quartile": "4",
+      "hash": "11b0f03112ed39e3e50097d65c9b5130ffd78738353e4bfb673225c2cee45d4f",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Was ok but that’s about it."
+    },
+    {
+      "listing_id": "41869315",
+      "review_id": "897000077019562312",
+      "date": "2023-05-22",
+      "time_rank_quartile": "4",
+      "hash": "17738dfb0db71fce72d03306ccab28846ae6440e06021aaa3cf4603c72ef6a72",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Beautiful bathroom and super clean. Free parking outside was great too. One of the windows wouldn’t open and needs a little tlc, looked to be a damp patch/ paintwork needed doing but great location, walkable to city centre and the arena."
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "156010726",
+      "date": "2017-05-29",
+      "time_rank_quartile": "1",
+      "hash": "0175f16e657a20c423e0ae392b25ce33b58aada22e62a618803391f8d8d4ddff",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Nicole was very helpful and welcoming in greeting us and showing us around the house , and giving us ideas of places to go in the evening , would certainly recommend the house. "
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "105501839",
+      "date": "2016-10-02",
+      "time_rank_quartile": "1",
+      "hash": "0217f5e72c61b9644266df1ed583caae155df9b60c56001c0aaf88df115c7230",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Very comfortable room to stay. Easy access to city centre by public transport. I stayed there 18 nights and very much enjoyed it. Nicole is mega friendly and helpful host! I hope to stay there again when I'm back. "
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "92448071",
+      "date": "2016-08-08",
+      "time_rank_quartile": "1",
+      "hash": "39164ab0a14ac2472ac51dd69cf3c79f723da1b2a0587bd39636e1d00e27c47c",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Nicole's place was so nice and easy to find! My friend and I stay a night there after a couple of nights of campin and it was so nice to sleep in such a comfy bed! If we go back to Manchester we would stay there again."
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "113600528",
+      "date": "2016-11-13",
+      "time_rank_quartile": "1",
+      "hash": "3d1a205f0acffb7fda3dd59f0f515cb6ac7cff6a99c98737fcdc7b1dc60302d5",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Quiet residential street. It is a short walk to tram or bus stop, where you can take transit to shops and town center. (there are no large shops or restaurants near the house, ok for me because I prefer quiet) Nicole was friendly and helpful. The bed is super comfortable! House was overall sparse but in good shape. Great location and value, would stay again!"
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "91700623",
+      "date": "2016-08-06",
+      "time_rank_quartile": "1",
+      "hash": "59c7b1f303a86b6836ceb8db18d1f98c9de55e9e8ea6bc712e25d114b55bf534",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "We had a fabulous stay at Nicole's . She is such a warm lovely host and made our stay so enjoyable. Nicole is there it you want to chat and gives you amazing recommendations for the area but doesn't invade your privacy. <br/>Nicole's house is lovely and so bright. The bedroom was really sunny in the mornings which was lovely as well and the bed was very comfy. The location is perfect as you can walk 6 mins to the tram or walk 24-30 mins to town and there is a little corner shop around the corner. <br/>Nicole was very responsive prior to our stay and always answered our messages quickly. <br/>If you want an affordable stay in a beautiful house in a great location with a lovely host then you should stay at Nicole's house."
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "125732740",
+      "date": "2017-01-07",
+      "time_rank_quartile": "1",
+      "hash": "996723a3c4baf7bf1e051790117b5d337c25f9c55bb545ee1a2d31707da44a86",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Nicole ist eine super freundliche und kommunikative Gastgeberin. Wir haben uns sehr wohl gefühlt. Das Haus ist schön und sehr einfach vom Flughafen zu erreichen. Wer nicht ca. 20 Minuten zur Stadt laufen will, nimmt eben den Bus gleich um die Ecke. \r<br/>Würden auf jeden Fall wiederkommen."
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "259071255",
+      "date": "2018-04-30",
+      "time_rank_quartile": "2",
+      "hash": "06bd198ab419ffdda01b7fac54e41c3148ddb6e9093c5c3d93bff06d9f140eda",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "We had a nice three days stay at Nicole’s. Cozy apartment that had everything one could have asked for. Full access to living room and kitchen area. Being served a cup of tea and chatting with Nicole was nice! An overall pleasant stay 😊"
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "342660383",
+      "date": "2018-10-29",
+      "time_rank_quartile": "2",
+      "hash": "0e0e0a68dc276ab3f675414263ea658b59b3ead13fb8d40ec63cc1c0c348ad38",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "I would strongly recommend. Very nice and smart place. The place is actually worth than the cost👌"
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "250189258",
+      "date": "2018-04-04",
+      "time_rank_quartile": "2",
+      "hash": "26ad9e8db24f8fea47d9ca74551f97c59aa2846463d7a2b3d745cb437524da54",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Incredible house !! :)"
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "228900594",
+      "date": "2018-01-21",
+      "time_rank_quartile": "2",
+      "hash": "54e357e3acaf6744119c55fac12a5fdd16988c836ee7bec37677d85f4594961d",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Good value for money, centrally located with easy access to all transport routes!"
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "223389198",
+      "date": "2018-01-01",
+      "time_rank_quartile": "2",
+      "hash": "b796fb1b0dc33cd57fb322b21015a8c87b932d934ac4042556293ae28ece691e",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "The stay at Nicole's place was excellent. Although we didn't meet her in person, she answererd quickly to my message and had a friend over to show us around and explain everything when we arrived. Clean, tidy and without traffic noise. Also, we could help ourselves to coffee, tea and milk<br/>The house is just a short walk from the train station, where trams run regularly to the center (only three stops). Would definitely recommend this place!"
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "292555562",
+      "date": "2018-07-18",
+      "time_rank_quartile": "2",
+      "hash": "be09829769072522b5a99b0d764979d6a143895fd26d0fa40b06e825b179b388",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Nicole’s room was clean, quiet and well located. Quick walk to Deansgate, the tram line or Old Trafford. Nicole and her house mates kept to themselves so you’ll have loads of privacy staying here. "
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "496874684",
+      "date": "2019-07-28",
+      "time_rank_quartile": "3",
+      "hash": "1bdf7f9507b83d3960ab6d0cfac157b047739af25edc22fc424e6f58dc17a7f6",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "We never stayed at the room. <br/>Nicole was very easy to reach, both before coming and after we arrived and the problems begun. When we arrived (late at night because of our flight), we tried to enter the apartment but no one was there. The master key safe was empty, and when we contacted Nicole she said that the previous hosted probably didn't leave the key at its place, but no one was there to let us in. That caused us to have to find a hotel as near at the Airbnb, since it was late at night, cold and raining, and we couldn't wait any longer for someone to let us in. The Airbnb support team contacted us the next day and was as helpful as they could be."
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "586882238",
+      "date": "2020-01-02",
+      "time_rank_quartile": "3",
+      "hash": "33470bb29ccf4736cc14597332826215b17914e42ea9749544e1ecf5d27cd289",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Nicole was very welcoming and her house is nice and comfortable."
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "508091350",
+      "date": "2019-08-12",
+      "time_rank_quartile": "3",
+      "hash": "5d93e621224856f26b0fbf419fde1bad54a1915ac4fbc4803a6855a3496a90ee",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Amazing place.<br/>Would like to stay there one more time if will go to Manchester again."
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "506124904",
+      "date": "2019-08-10",
+      "time_rank_quartile": "3",
+      "hash": "636458d0967a7779e6d0fd160fc165067fd6091c4b17698c64d13ff095c6a0b1",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "A very comfortable and clean home. Also incredibly stylish (home and host). Had a quiet and restful stay here. Couldn't ask for more, would definitely stay here again when I come to Manchester. Thanks Nicole :)"
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "494430180",
+      "date": "2019-07-24",
+      "time_rank_quartile": "3",
+      "hash": "6b3a9f5c38083e9046c37723bce79f3de520ce894c0cec2d31d265867e76a935",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "A lovely stay at Nicole's and a lovely woman. Clean, relaxing and easy bus access into town and the Universities.<br/>Nicole is a wonderful woman and host."
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "446346803",
+      "date": "2019-05-01",
+      "time_rank_quartile": "3",
+      "hash": "6b9fad4764d1aa5124a0a1ec718869840a69c1d2308958c8845b25446e83803c",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Gute Lage und unkompliziert."
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "762183316131005362",
+      "date": "2022-11-17",
+      "time_rank_quartile": "4",
+      "hash": "1c220265003279feff7e0ee0d607477cf4c9ff3e8b536185798c2e9fff138705",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Nicole is really friendly and helpful. Her place is only a 10-min walk from Cornbrook Metrolink station and a 3-min walk from a convenience store. If you are looking for a nice place near city centre to stay, I would definitely recommend Nicole's place."
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "763699370",
+      "date": "2021-05-29",
+      "time_rank_quartile": "4",
+      "hash": "1e5ca532b07d0930be8323ca502ccd4cc817f62d2c40d95b9c23fe743c41afae",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Lovely airbnb and Nicole is a lovely host!"
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "645510847235828921",
+      "date": "2022-06-09",
+      "time_rank_quartile": "4",
+      "hash": "47a7a8c1f166a1060aa8d66b512443d3ad3b34b57cf03fb15726d42810035e65",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Very nice, considerate and welcoming host, the house was very clean and warm, Nicole can suggest amazing places to visit in Manchester, which i would recommend after following her advice ! The house is perfeclty located, close to Metrolink station, 5 mins to city centre."
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "916524645217692411",
+      "date": "2023-06-18",
+      "time_rank_quartile": "4",
+      "hash": "4bc40072893e4a3e7c5670649997bfd87d0eb417da3fa410e794b2eee7030252",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Great room. Large windows, lovely view of sunrise. Great space for cooking in. Very easy walk straight into the middle of town. Nicole was very friendly and welcoming, very accommodating and helpful."
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "596203453169120005",
+      "date": "2022-04-02",
+      "time_rank_quartile": "4",
+      "hash": "5a3dca1b1fb58b7c8582415a6470f3d59aa8ac09b07444ab374c6015298e6a1f",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "The perfect place meeting  everyone’s wishes"
+    },
+    {
+      "listing_id": "8855792",
+      "review_id": "546878877407324831",
+      "date": "2022-01-24",
+      "time_rank_quartile": "4",
+      "hash": "71e4c0649448beac2d0f5147cb4378532077e9ca22f82c24886e7266d1f4a189",
+      "selection_reason": "budget_not_selected",
+      "original_comment": "Nicole is a lovely host and the room was very cosy"
+    }
+  ],
+  "inspection_coverage": [
+    {
+      "listing_id": "1633376659923996824",
+      "supplied_inspection_n": "3",
+      "supplied_total": "3",
+      "excluded_inspection_n": "0",
+      "excluded_total": "0"
+    },
+    {
+      "listing_id": "1639943466139907458",
+      "supplied_inspection_n": "1",
+      "supplied_total": "1",
+      "excluded_inspection_n": "0",
+      "excluded_total": "0"
+    },
+    {
+      "listing_id": "908313903709894761",
+      "supplied_inspection_n": "2",
+      "supplied_total": "2",
+      "excluded_inspection_n": "0",
+      "excluded_total": "0"
+    },
+    {
+      "listing_id": "1253637362965807207",
+      "supplied_inspection_n": "1",
+      "supplied_total": "1",
+      "excluded_inspection_n": "0",
+      "excluded_total": "0"
+    },
+    {
+      "listing_id": "811935840856297078",
+      "supplied_inspection_n": "82",
+      "supplied_total": "82",
+      "excluded_inspection_n": "0",
+      "excluded_total": "0"
+    },
+    {
+      "listing_id": "1322576000460694635",
+      "supplied_inspection_n": "33",
+      "supplied_total": "33",
+      "excluded_inspection_n": "0",
+      "excluded_total": "0"
+    },
+    {
+      "listing_id": "54070824",
+      "supplied_inspection_n": "20",
+      "supplied_total": "20",
+      "excluded_inspection_n": "0",
+      "excluded_total": "0"
+    },
+    {
+      "listing_id": "22551754",
+      "supplied_inspection_n": "19",
+      "supplied_total": "19",
+      "excluded_inspection_n": "0",
+      "excluded_total": "0"
+    },
+    {
+      "listing_id": "30782781",
+      "supplied_inspection_n": "105",
+      "supplied_total": "105",
+      "excluded_inspection_n": "24",
+      "excluded_total": "3995"
+    },
+    {
+      "listing_id": "20910508",
+      "supplied_inspection_n": "70",
+      "supplied_total": "70",
+      "excluded_inspection_n": "24",
+      "excluded_total": "932"
+    },
+    {
+      "listing_id": "41869315",
+      "supplied_inspection_n": "78",
+      "supplied_total": "78",
+      "excluded_inspection_n": "24",
+      "excluded_total": "124"
+    },
+    {
+      "listing_id": "8855792",
+      "supplied_inspection_n": "87",
+      "supplied_total": "87",
+      "excluded_inspection_n": "24",
+      "excluded_total": "38"
+    }
+  ],
+  "excluded_sampling_rule": {
+    "seed": "20260930-ai-review-v1",
+    "population": "All excluded reviews, including punctuation-only exclusions, for the four heavy listings",
+    "rule": "Sort excluded rows by date then string review_id. Split sorted ranks into four consecutive blocks using numpy.array_split (larger blocks first). Within each block sort by SHA256(seed|listing_id|review_id) then string review_id; take first 6. No keywords, manual nominations, or known failure cases used.",
+    "per_listing": 24,
+    "total": 96,
+    "limitations": "Time-rank stratification over-samples sparsely populated periods relative to review volume if block sizes differ slightly; fixed small sample can miss rare feedback; no prevalence inference."
+  },
+  "uncertain_decisions": [
+    {
+      "listing_id": "1639943466139907458",
+      "claim_number": "1",
+      "decision": "partially supported",
+      "uncertainty": "The French source says the guests 'found ourselves on the street,' supporting a stranded account, but it does not explicitly locate that event 'upon arrival.'"
+    },
+    {
+      "listing_id": "22551754",
+      "claim_number": "2",
+      "decision": "partially supported",
+      "uncertainty": "One source calls the room 'massive' and 'comfy' without explicitly attaching comfort to the bed; the other source explicitly supports both room size and bed comfort."
+    },
+    {
+      "listing_id": "8855792",
+      "claim_number": "5",
+      "decision": "partially supported",
+      "uncertainty": "The full source reports eventual entry, but the generated excerpt stops before that resolution. Full-review semantic support and excerpt coverage therefore differ."
+    },
+    {
+      "listing_id": "30782781",
+      "claim_number": "5",
+      "decision": "partially supported",
+      "uncertainty": "The cited review supports the missing oven but not hot water. A different supplied review supports hot-water trouble, but citations were not silently substituted."
+    },
+    {
+      "listing_id": "20910508",
+      "claim_number": "1",
+      "decision": "partially supported",
+      "uncertainty": "The two citations collectively contain views, peace, privacy and woodland, but each supports a different subset; this does not establish recurrence of the conjunction."
+    },
+    {
+      "listing_id": "8855792",
+      "claim_number": NaN,
+      "decision": "selection omission",
+      "uncertainty": "Failed check-in review 496874684 appeared in the fixed hash sample, but it was already a known development case and is not treated as independent validation."
+    }
+  ]
+}

@@ -1,3 +1,8 @@
 .env
-/data/
+/data/*
+!/data/README.md
 /instruction/
+/live_results/
+__pycache__/
+*.pyc
+/property_profiles.executed.ipynb
