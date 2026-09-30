@@ -18,12 +18,12 @@ data/
   reviews.csv.gz              local, ignored by Git
 results/
   README.md                   experiment roles and record types
-  original_20260929/          prompt history and historical comparisons
+  original_20260929/          development evidence: prompt iteration and side experiments
     runs.jsonl
     sample_manifest.csv
     experiment_summary.json
     claim_evidence_review.json
-  rerun_20260930T070111Z/     primary current-pipeline result set
+  rerun_20260930T070111Z/     primary result set used for reported findings
     runs.jsonl
     ai_assisted_review.json
     comparison_checks.json

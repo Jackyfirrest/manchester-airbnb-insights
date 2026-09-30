@@ -1,6 +1,6 @@
 # Experiment records
 
-The notebook uses `rerun_20260930T070111Z/` as the primary result set. The 29 September folder supports prompt development and clearly labeled historical comparisons.
+The two folders have different roles rather than competing versions. The notebook uses `rerun_20260930T070111Z/` for every primary reported finding. `original_20260929/` preserves development evidence for prompt iteration and clearly labeled side experiments.
 
 ## `original_20260929/`
 
