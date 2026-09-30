@@ -1,6 +1,6 @@
 # Review-grounded property profiles
 
-`property_profiles.ipynb` is the implementation, analysis, and main deliverable. The executive **Written summary** is the second cell, under **“Written summary for the portfolio manager.”** The rest of the notebook starts with the fixed Inside Airbnb snapshot, rebuilds the diagnostic sample, prepares and selects reviews, shows both prompt versions and their observed outcomes, parses and validates saved responses, evaluates claims and omissions, runs the order-only stability comparison, draws the figures, and projects cost.
+`property_profiles.ipynb` is the implementation, analysis, and main deliverable. The executive **Written summary** is the second cell, under **“Written summary for the portfolio manager.”** The rest of the notebook starts with the fixed Inside Airbnb snapshot, rebuilds the diagnostic sample, prepares and selects reviews, shows both prompt versions and their observed outcomes, parses and validates saved responses, evaluates claims and omissions, tests sensitivity to review order, draws the figures, and projects cost.
 
 The 12-listing sample is diagnostic rather than representative. It fills a 3 review-volume × 2 recency × 2 geography design and contains deliberate low-evidence and large-input cases. It is enough to exercise the pipeline and expose failures, but not to estimate portfolio-wide accuracy. It does not test Salford or the eight reviewed listings missing detailed metadata; the notebook states the larger human-labeled evaluation needed before production.
 
@@ -30,7 +30,7 @@ results/
     hash_verification.json
 ```
 
-The main findings, profiles, claim review, stability figure, measured usage, and cost projection use the 30 September experiment: 12 main calls and three order-only calls made through the pipeline implemented in the notebook. Its semantic review is linked only to those outputs. The 29 September records remain for prompt iteration, the human-assisted paired case, the earlier excluded-review inspection, and historical comparison.
+The main findings, profiles, claim review, stability figure, measured usage, and cost projection use the 30 September experiment: 12 main calls and three calls that change only review order. Its claim-evidence review is linked only to those outputs. The 29 September records remain for prompt iteration, the human-assisted paired case, the earlier excluded-review inspection, and historical comparison.
 
 Raw response records cannot be recreated byte for byte because model outputs may vary. Calculated tables and figures are rebuilt from the downloaded data and saved responses each time the notebook runs. Recorded semantic judgments are evidence from a separate AI-assisted review; new outputs need a new review and must not inherit old labels.
 
