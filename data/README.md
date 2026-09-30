@@ -16,5 +16,6 @@ joined by `reviews.listing_id = listings.id`. The detailed listing file has
 coverage figure against either the 6,947-listing inventory or the 5,579 reviewed
 listing population and labels the denominator.
 
-The downloaded files are intentionally excluded from Git. `profile_pipeline.py`
-checks all three hashes before constructing a live request.
+The downloaded files are intentionally excluded from Git. The notebook checks
+all three hashes before constructing a live request. The snapshot date is
+28 June 2026; the sampling recency anchor is 29 June 2026.

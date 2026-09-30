@@ -1,0 +1,869 @@
+{
+  "method": "AI-assisted Codex inspection of new outputs against only their supplied reviews; no judge API call and no reuse of original labels.",
+  "rubric": {
+    "supported": "Every material clause and qualifier is supported by the cited supplied text.",
+    "partially supported": "Some material content is supported, but a clause, qualifier, or recurring/single wording is not fully supported.",
+    "unsupported": "The cited text does not support the material claim.",
+    "contradicted": "The supplied text directly conflicts with the claim.",
+    "unclear": "The evidence is insufficient to decide confidently."
+  },
+  "scope": {
+    "main_profiles": 12,
+    "claims_reviewed": 52,
+    "supplied_reviews_screened": 501,
+    "omission_method": "All supplied rows were screened with issue/contrast cues; candidate passages and cited multi-issue reviews were inspected semantically. This can miss important feedback expressed without those cues."
+  },
+  "claim_judgments": [
+    {
+      "listing_id": "1633376659923996824",
+      "run_id": "listing_1633376659923996824",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the place was very clean.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "1682624629198465028",
+        "1696423336366677461"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "1633376659923996824",
+      "run_id": "listing_1633376659923996824",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported that the property is spacious and comfortable.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "1682624629198465028",
+        "1696423336366677461"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "partially supported",
+      "reason": "The first citation supports spacious and comfortable; the second supports spacious but not comfortable.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "1633376659923996824",
+      "run_id": "listing_1633376659923996824",
+      "claim_number": 3,
+      "statement": "One supplied review reported that the place looks better in person than in the pictures.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "1696423336366677461"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "1639943466139907458",
+      "run_id": "listing_1639943466139907458",
+      "claim_number": 1,
+      "statement": "One supplied review reported a severe reservation issue leaving the guest stranded (\"Nous nous sommes retrouvés à la rue…\").",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "1677515306984760561"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "908313903709894761",
+      "run_id": "listing_908313903709894761",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the property is within walking distance or easy access to the city center.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "911424145276930977",
+        "912235421991486950"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "908313903709894761",
+      "run_id": "listing_908313903709894761",
+      "claim_number": 2,
+      "statement": "One supplied review reported good communication and that instructions worked well.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "911424145276930977"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "908313903709894761",
+      "run_id": "listing_908313903709894761",
+      "claim_number": 3,
+      "statement": "One supplied review reported that the room was clean and quiet.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "912235421991486950"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "1253637362965807207",
+      "run_id": "listing_1253637362965807207",
+      "claim_number": 1,
+      "statement": "One supplied review reported that the room was excessively dirty upon arrival, leading to a canceled check-in and a partial cleaning fee deduction.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "1256475726723928190"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "partially supported",
+      "reason": "The review supports dirt, no check-in, and a £150 deduction, but does not explicitly call the decision a canceled check-in or the deduction partial.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "811935840856297078",
+      "run_id": "listing_811935840856297078",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the host, Olu, was exceptionally friendly, welcoming, and responsive to inquiries.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "1439885876484198234",
+        "1471689341558652286"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "partially supported",
+      "reason": "Both citations support friendliness, but welcoming and responsiveness are not both repeated across the two cited reviews.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "811935840856297078",
+      "run_id": "listing_811935840856297078",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews noted the accommodation's convenience for attending events at nearby arenas such as Co-op Live.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "1515144341673713690",
+        "1636281937758252970"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "811935840856297078",
+      "run_id": "listing_811935840856297078",
+      "claim_number": 3,
+      "statement": "Multiple supplied reviews offered mixed feedback regarding cleanliness, with some guests praising clean rooms while another reported significant cleaning and maintenance issues.",
+      "pattern": "mixed_in_selected",
+      "cited_review_ids": [
+        "1434065058245510587",
+        "1687725383392717290"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "811935840856297078",
+      "run_id": "listing_811935840856297078",
+      "claim_number": 4,
+      "statement": "One supplied review reported that the bed was comfortable and provided a great night's sleep.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "1472482104901066218"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "811935840856297078",
+      "run_id": "listing_811935840856297078",
+      "claim_number": 5,
+      "statement": "One supplied review noted clear and easy check-in instructions provided in advance.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "1671737488958756980"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "811935840856297078",
+      "run_id": "listing_811935840856297078",
+      "claim_number": 6,
+      "statement": "One supplied review mentioned unexpected noise from another guest staying in the third bedroom.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "1678329146727350827"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "1322576000460694635",
+      "run_id": "listing_1322576000460694635",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the host was very communicative, responsive, and supportive.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "1377477057009126785",
+        "1593495108357984244"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "partially supported",
+      "reason": "The citations collectively support these qualities, but the first does not explicitly support communication or responsiveness.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "1322576000460694635",
+      "run_id": "listing_1322576000460694635",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported that the property is located on a very noisy main road with traffic and emergency vehicle sirens.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "1439130688631351298",
+        "1698567858195135735"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "1322576000460694635",
+      "run_id": "listing_1322576000460694635",
+      "claim_number": 3,
+      "statement": "At least two supplied reviews reported that the apartment was clean and tidy.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "1560919456291302662",
+        "1566028808008855476"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "1322576000460694635",
+      "run_id": "listing_1322576000460694635",
+      "claim_number": 4,
+      "statement": "One supplied review reported that the sofa bed was uncomfortable.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "1636971809543791501"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "1322576000460694635",
+      "run_id": "listing_1322576000460694635",
+      "claim_number": 5,
+      "statement": "One supplied review noted an awkward sloping ceiling above the bath or shower.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "1593495108357984244"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "54070824",
+      "run_id": "listing_54070824",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the house was very clean and spotless upon arrival.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "556401407933541194",
+        "640415093720994443"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "54070824",
+      "run_id": "listing_54070824",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported helpful communication and attentive service from the host, while one review reported a same-day cancellation.",
+      "pattern": "mixed_in_selected",
+      "cited_review_ids": [
+        "556401407933541194",
+        "566119643919655901"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "partially supported",
+      "reason": "Only one cited review supplies the positive communication/service report; the other is the cancellation complaint, so 'at least two' positive reports is unsupported.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "54070824",
+      "run_id": "listing_54070824",
+      "claim_number": 3,
+      "statement": "At least two supplied reviews reported that the property is in a good location with easy access to the city centre and nearby tram stops.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "562122934469419267",
+        "650526696383979427"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "partially supported",
+      "reason": "One citation supports location outside the centre and the other supports tram access; neither alone supports the full combined recurring statement.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "54070824",
+      "run_id": "listing_54070824",
+      "claim_number": 4,
+      "statement": "At least two supplied reviews noted amenities such as interior LED lighting and provided kitchen items or welcome snacks.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "541123711376532719",
+        "562122934469419267"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "54070824",
+      "run_id": "listing_54070824",
+      "claim_number": 5,
+      "statement": "One supplied review reported that the property features comfortable beds.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "718666606839203153"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "54070824",
+      "run_id": "listing_54070824",
+      "claim_number": 6,
+      "statement": "One supplied review reported that the living room was lovely but noted an absence of garden furniture.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "926724194581670587"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "22551754",
+      "run_id": "listing_22551754",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the host, Edward, was extremely friendly, helpful, and responsive.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "770906992295609600",
+        "920878091577641307"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "22551754",
+      "run_id": "listing_22551754",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported that the bedrooms are spacious and the beds are very comfortable.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "256219623",
+        "868691925229359007"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "partially supported",
+      "reason": "Both citations support comfort, but only one explicitly describes a spacious room.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "22551754",
+      "run_id": "listing_22551754",
+      "claim_number": 3,
+      "statement": "At least two supplied reviews reported that the location is quiet, peaceful, and has beautiful views.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "749829895385857336",
+        "770906992295609600"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "partially supported",
+      "reason": "One citation supports quiet and peaceful surroundings; the other supports the view. The full combination is not repeated twice.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "22551754",
+      "run_id": "listing_22551754",
+      "claim_number": 4,
+      "statement": "One supplied review qualified the view description, noting that the views are from the kitchen rather than the double room.",
+      "pattern": "mixed_in_selected",
+      "cited_review_ids": [
+        "866586358850259299"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "22551754",
+      "run_id": "listing_22551754",
+      "claim_number": 5,
+      "statement": "One supplied review reported that the room was clean and tidy.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "256219623"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "22551754",
+      "run_id": "listing_22551754",
+      "claim_number": 6,
+      "statement": "One supplied review reported having a brand new private bathroom.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "868691925229359007"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "30782781",
+      "run_id": "listing_30782781",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported a great, central location close to transport links and attractions.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "367708574",
+        "925276561158706130"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "30782781",
+      "run_id": "listing_30782781",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported that the staff were very friendly and helpful.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "613600601",
+        "1371704621526594013"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "30782781",
+      "run_id": "listing_30782781",
+      "claim_number": 3,
+      "statement": "At least two supplied reviews reported extremely comfortable beds and luxurious bedding.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "596660074",
+        "1615946252106202236"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "partially supported",
+      "reason": "One citation supports an exceptionally comfortable bed; the other supports luxurious linen and a comfortable stay, but not explicitly an extremely comfortable bed.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "30782781",
+      "run_id": "listing_30782781",
+      "claim_number": 4,
+      "statement": "One supplied review reported a negative experience with the hot water supply for a bath late at night.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "605009570"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "30782781",
+      "run_id": "listing_30782781",
+      "claim_number": 5,
+      "statement": "At least two supplied reviews reported that the rooms were clean and spotless.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "873828010922467260",
+        "1454289342738986127"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "30782781",
+      "run_id": "listing_30782781",
+      "claim_number": 6,
+      "statement": "One supplied review reported an issue with a non-working room boiler resulting in cold baths.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "1498492003492412858"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "20910508",
+      "run_id": "listing_20910508",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported stunning, peaceful views and surroundings.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "941929356308426033",
+        "1447836530805707486"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "20910508",
+      "run_id": "listing_20910508",
+      "claim_number": 2,
+      "statement": "One supplied review reported that the lodge was incredibly clean.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "1370319234852949149"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "20910508",
+      "run_id": "listing_20910508",
+      "claim_number": 3,
+      "statement": "At least two supplied reviews reported that the cabin is very cosy and comfortable.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "951325391772625942",
+        "1576119731598752249"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "20910508",
+      "run_id": "listing_20910508",
+      "claim_number": 4,
+      "statement": "At least two supplied reviews reported that Nic was a great and responsive host.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "1007112355435305409",
+        "1143377325560903608"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "20910508",
+      "run_id": "listing_20910508",
+      "claim_number": 5,
+      "statement": "One supplied review reported that the kitchen/bathroom can get very cold in winter.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "1605797246270059351"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "41869315",
+      "run_id": "listing_41869315",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that the apartment is situated in an industrial area, which felt unsafe or unappealing for walking after dark.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "955633286350693048",
+        "1006420763848632727"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "41869315",
+      "run_id": "listing_41869315",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported issues with cleanliness, including stained carpets and dirty dishes upon arrival.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "1010803778245687762",
+        "1038339941619740679"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "41869315",
+      "run_id": "listing_41869315",
+      "claim_number": 3,
+      "statement": "At least two supplied reviews reported complications and mandatory off-site requirements regarding security deposits and check-in procedures.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "950655673572254630",
+        "1006420763848632727"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "partially supported",
+      "reason": "Both citations mention deposit or access processes, but the full claim about mandatory off-site requirements and check-in complications is not explicit in both.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "41869315",
+      "run_id": "listing_41869315",
+      "claim_number": 4,
+      "statement": "One supplied review reported a lack of basic kitchen items such as tea towels and cooking basics.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "556403007702776947"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "partially supported",
+      "reason": "The citation supports missing tea towels but does not support the broader reference to missing cooking basics.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "8855792",
+      "run_id": "listing_8855792",
+      "claim_number": 1,
+      "statement": "At least two supplied reviews reported that Nicole was a welcoming and helpful host.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "88997210",
+        "89880042"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "partially supported",
+      "reason": "Both citations support a warm or welcoming host, but helpfulness is not explicit in both cited reviews.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "8855792",
+      "run_id": "listing_8855792",
+      "claim_number": 2,
+      "statement": "At least two supplied reviews reported that the house is conveniently located close to public transport and the city center.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "129894661",
+        "168814174"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "8855792",
+      "run_id": "listing_8855792",
+      "claim_number": 3,
+      "statement": "At least two supplied reviews reported that the rooms and house were clean and tidy.",
+      "pattern": "recurring_in_selected",
+      "cited_review_ids": [
+        "129894661",
+        "336420254"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "8855792",
+      "run_id": "listing_8855792",
+      "claim_number": 4,
+      "statement": "One supplied review reported that the room was quite small and hot, with thin pillows, though a fan was provided and the bed was comfy.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "159956546"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "8855792",
+      "run_id": "listing_8855792",
+      "claim_number": 5,
+      "statement": "One supplied review reported an issue with communication and getting a response upon arrival.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "167226132"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    },
+    {
+      "listing_id": "8855792",
+      "run_id": "listing_8855792",
+      "claim_number": 6,
+      "statement": "One supplied review reported difficulty using amenities such as the washing machine due to a locked door and slow response time.",
+      "pattern": "isolated",
+      "cited_review_ids": [
+        "1210776061467374986"
+      ],
+      "all_cited_ids_supplied": true,
+      "semantic_status": "supported",
+      "reason": "The cited supplied review text supports the complete atomic statement and its single/recurring wording.",
+      "judgment_provenance": "AI-assisted Codex review; not independently human-rated"
+    }
+  ],
+  "supplied_input_omissions": [
+    {
+      "listing_id": "811935840856297078",
+      "review_ids": [
+        "1524625944893174804"
+      ],
+      "feedback": "A bedroom TV did not work and rooms needed refreshing."
+    },
+    {
+      "listing_id": "811935840856297078",
+      "review_ids": [
+        "1558007459727716462",
+        "1672437037069052734"
+      ],
+      "feedback": "Guests described dated or unpleasant conditions and concerns about the surrounding area."
+    },
+    {
+      "listing_id": "1322576000460694635",
+      "review_ids": [
+        "1593495108357984244"
+      ],
+      "feedback": "A guest reported radiator trouble."
+    },
+    {
+      "listing_id": "1322576000460694635",
+      "review_ids": [
+        "1406542513987518617"
+      ],
+      "feedback": "A guest heard main-road noise but still slept well, qualifying the complaint."
+    },
+    {
+      "listing_id": "30782781",
+      "review_ids": [
+        "485353211159450076",
+        "576704362415894681",
+        "1522446140181755210"
+      ],
+      "feedback": "Several supplied reviews reported street or guest noise."
+    },
+    {
+      "listing_id": "30782781",
+      "review_ids": [
+        "596660074"
+      ],
+      "feedback": "A guest reported that the apartment lacked an oven."
+    },
+    {
+      "listing_id": "30782781",
+      "review_ids": [
+        "1148490519506859189"
+      ],
+      "feedback": "A guest reported a disputed pet-fee handling experience."
+    },
+    {
+      "listing_id": "41869315",
+      "review_ids": [
+        "658574185996192415"
+      ],
+      "feedback": "A guest reported excessive heat and inadequate cooling."
+    },
+    {
+      "listing_id": "41869315",
+      "review_ids": [
+        "1036874087568306502"
+      ],
+      "feedback": "A cut radiator cable left the living area cold."
+    },
+    {
+      "listing_id": "41869315",
+      "review_ids": [
+        "449811320722078668"
+      ],
+      "feedback": "A guest reported inflexible check-in and check-out arrangements."
+    },
+    {
+      "listing_id": "41869315",
+      "review_ids": [
+        "556403007702776947"
+      ],
+      "feedback": "A long negative review reported a painful mattress, corridor noise, television problems, and difficulty finding the property."
+    },
+    {
+      "listing_id": "8855792",
+      "review_ids": [
+        "159956546"
+      ],
+      "feedback": "The cited review also reported shared bathrooms and an inconvenient shower two flights downstairs."
+    }
+  ],
+  "limitations": [
+    "The judgments are AI-assisted and were not independently human-rated.",
+    "The rerun uses the same purposive 12 listings and does not estimate population quality.",
+    "Omission screening is reproducible but can miss feedback not captured by issue or contrast cues."
+  ]
+}

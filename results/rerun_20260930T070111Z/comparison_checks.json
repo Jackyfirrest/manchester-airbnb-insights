@@ -1,0 +1,8 @@
+{
+  "frozen_before_calls": true,
+  "execution": "15/15 parseable responses; preserve every failure",
+  "structural": "Report schema and citation ID/date/quote errors; no silent repair",
+  "factual_support": "Same atomic-claim rubric; >10 percentage-point drop from original 64% fully supported is a material diagnostic difference",
+  "issue_coverage": "Inspect supplied reviews and report omission records per 12 profiles",
+  "stability_usage": "Compare three order-only pairs, citation overlap, themes, and tokens; wording similarity is not required"
+}

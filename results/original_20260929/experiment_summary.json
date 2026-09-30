@@ -1198,5 +1198,60 @@
         "API latency is not end-to-end production runtime; quotas, concurrency, failures and queueing can dominate."
       ]
     }
+  },
+  "data_audit": {
+    "snapshot_area": "Greater Manchester, 10 boroughs",
+    "review_date_min": "2012-02-13",
+    "review_date_max": "2026-06-29",
+    "summary_listing_rows": 6947,
+    "detailed_listing_rows": 6930,
+    "review_rows": 268909,
+    "reviewed_listings": 5579,
+    "zero_review_listings": 1368,
+    "review_count_bands": {
+      "0": 1368,
+      "1-4": 1390,
+      "5-99": 3457,
+      "100+": 732
+    },
+    "reviews_per_inventory_listing": {
+      "median": 9.0,
+      "p90": 104.4,
+      "p99": 393.54,
+      "max": 4100
+    },
+    "comment_length_characters": {
+      "median": 138,
+      "p90": 426,
+      "p99": 966,
+      "max": 5474
+    },
+    "comment_length_words": {
+      "median": 23,
+      "p90": 75,
+      "p99": 167,
+      "max": 992
+    },
+    "null_comments": 0,
+    "empty_string_comments": 0,
+    "whitespace_only_comments": 0,
+    "missing_or_blank_comments": 0,
+    "pandas_default_na_marker_comments": 41,
+    "broader_na_like_marker_candidates": 63,
+    "ascii_punctuation_only_comments": 678,
+    "no_letters_or_digits_comments": 985,
+    "comment_missingness_correction": "Corrected from 41: default pandas NA parsing had converted 41 literal NA-like strings to null. Raw CSV parsing with keep_default_na=False finds 0 null, empty, or whitespace-only comments.",
+    "duplicate_review_ids": 0,
+    "duplicate_full_rows": 0,
+    "whole_corpus_exact_repeated_nonblank_comment_groups": 2122,
+    "whole_corpus_extra_rows_from_exact_repeated_nonblank_comments": 11510,
+    "within_listing_exact_repeated_nonblank_comment_groups": 550,
+    "within_listing_extra_rows_from_exact_repeated_nonblank_comments": 731,
+    "comments_with_html_br_tags": 48755,
+    "comments_with_repeated_horizontal_whitespace": 24334,
+    "reviews_unmatched_to_summary_listings": 0,
+    "inventory_listings_missing_detailed_metadata": 17,
+    "reviewed_inventory_listings_missing_detailed_metadata": 8,
+    "method_note": "Measured directly from the fixed downloaded snapshot; exact repeated text is retained because legitimate short reviews and platform-generated wording can repeat."
   }
 }

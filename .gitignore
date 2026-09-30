@@ -6,3 +6,5 @@
 __pycache__/
 *.pyc
 /property_profiles.executed.ipynb
+/property_profiles_runner.py
+/local_archive/

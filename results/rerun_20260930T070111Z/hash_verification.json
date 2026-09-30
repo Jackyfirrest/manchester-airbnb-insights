@@ -1,0 +1,359 @@
+{
+  "method": "Original records: SHA-256 of compact request JSON in insertion order. Rerun records: SHA-256 of compact request JSON with sorted keys. Fixed-input checks also use direct parsed-object equality.",
+  "note": "Token-count equality is not used as proof of identical content.",
+  "source_data_sha256": {
+    "listings.csv": "c263f67fa2c800aa1cd48815b3ff23a5b21eae1a243e11d5d0a25d82ccbcd41e",
+    "reviews.csv.gz": "d08a26d4d61f9c67283933013a4223a14f169e5cf0ee1bd98156c0a85411da73",
+    "listings.csv.gz": "979c31471f67ec5f6dbd1d94b298eb01f3708722cf102d94df2feef26d10334c"
+  },
+  "source_hashes_match_files": {
+    "listings.csv": true,
+    "reviews.csv.gz": true,
+    "listings.csv.gz": true
+  },
+  "original_request_hashes": [
+    {
+      "experiment": "pilot_v1",
+      "run_id": "low_automatic",
+      "stored": "427b59270ab820d591affce70b8acf5a3bb39549b0767ea804022d6f1a78505d",
+      "calculated": "427b59270ab820d591affce70b8acf5a3bb39549b0767ea804022d6f1a78505d",
+      "match": true
+    },
+    {
+      "experiment": "pilot_v1",
+      "run_id": "middle_automatic",
+      "stored": "db4229995fbde6ae3103ee24255e5ffb2ddb51000c1e4ae7dc79f0e6519e43d7",
+      "calculated": "db4229995fbde6ae3103ee24255e5ffb2ddb51000c1e4ae7dc79f0e6519e43d7",
+      "match": true
+    },
+    {
+      "experiment": "pilot_v1",
+      "run_id": "heavy_automatic",
+      "stored": "0ff12ec98655fc01181e0fa70bfbade76a4f11095abc27d72a19baecef331fd7",
+      "calculated": "0ff12ec98655fc01181e0fa70bfbade76a4f11095abc27d72a19baecef331fd7",
+      "match": true
+    },
+    {
+      "experiment": "pilot_v1",
+      "run_id": "heavy_human_assisted",
+      "stored": "42b539156d4f7572ed8417b39f7272c8a7e5c27de4d481f4b09a375920edf5c9",
+      "calculated": "42b539156d4f7572ed8417b39f7272c8a7e5c27de4d481f4b09a375920edf5c9",
+      "match": true
+    },
+    {
+      "experiment": "main_v2",
+      "run_id": "listing_1633376659923996824",
+      "stored": "1b41f26dbfe15ad91363e57ee25acc97405a40c236b03a16db225222fa8c6e0d",
+      "calculated": "1b41f26dbfe15ad91363e57ee25acc97405a40c236b03a16db225222fa8c6e0d",
+      "match": true
+    },
+    {
+      "experiment": "main_v2",
+      "run_id": "listing_1639943466139907458",
+      "stored": "a1f3aefee6979b3cab4536a36d4c5fa68136c89b45cdef579977607827ce2fe4",
+      "calculated": "a1f3aefee6979b3cab4536a36d4c5fa68136c89b45cdef579977607827ce2fe4",
+      "match": true
+    },
+    {
+      "experiment": "main_v2",
+      "run_id": "listing_908313903709894761",
+      "stored": "a38f85c32a061152b9b8157a430548b77adde7d5e0dcc7d23468333d7c44b309",
+      "calculated": "a38f85c32a061152b9b8157a430548b77adde7d5e0dcc7d23468333d7c44b309",
+      "match": true
+    },
+    {
+      "experiment": "main_v2",
+      "run_id": "low_automatic",
+      "stored": "a95414ec5a969ce63fe07ca82d6ad2b7b99b721947724d4269348f7b16ed1d4f",
+      "calculated": "a95414ec5a969ce63fe07ca82d6ad2b7b99b721947724d4269348f7b16ed1d4f",
+      "match": true
+    },
+    {
+      "experiment": "main_v2",
+      "run_id": "listing_811935840856297078",
+      "stored": "9af94ed699b79accab55e9da4e5d36fd57cba2e23bb13333e1c617f73f020b37",
+      "calculated": "9af94ed699b79accab55e9da4e5d36fd57cba2e23bb13333e1c617f73f020b37",
+      "match": true
+    },
+    {
+      "experiment": "main_v2",
+      "run_id": "middle_automatic",
+      "stored": "a7d8f689d906c28e1a71e36bd0bb148fd71dc0496d692f2a82d38d788abd46c5",
+      "calculated": "a7d8f689d906c28e1a71e36bd0bb148fd71dc0496d692f2a82d38d788abd46c5",
+      "match": true
+    },
+    {
+      "experiment": "main_v2",
+      "run_id": "listing_54070824",
+      "stored": "686c7fccf561ac7dd6e125b4070e9e3eeb26322da59a565b2c21faab6b24fc30",
+      "calculated": "686c7fccf561ac7dd6e125b4070e9e3eeb26322da59a565b2c21faab6b24fc30",
+      "match": true
+    },
+    {
+      "experiment": "main_v2",
+      "run_id": "listing_22551754",
+      "stored": "7840e956cf7bb1ff90f33725da88e2e08e8c393f2975824add2a3b05fffe7d00",
+      "calculated": "7840e956cf7bb1ff90f33725da88e2e08e8c393f2975824add2a3b05fffe7d00",
+      "match": true
+    },
+    {
+      "experiment": "main_v2",
+      "run_id": "heavy_automatic",
+      "stored": "a2ec9fce6ecd2dde2a6b7f13d68f4a9e3a3ae17bf1d6b61d462751d9a87cc3e7",
+      "calculated": "a2ec9fce6ecd2dde2a6b7f13d68f4a9e3a3ae17bf1d6b61d462751d9a87cc3e7",
+      "match": true
+    },
+    {
+      "experiment": "main_v2",
+      "run_id": "listing_20910508",
+      "stored": "0d2bf0a5f3d76ff79eaa3da6fec97827fbb044d8b4056ffd8d2717c4e3d663e9",
+      "calculated": "0d2bf0a5f3d76ff79eaa3da6fec97827fbb044d8b4056ffd8d2717c4e3d663e9",
+      "match": true
+    },
+    {
+      "experiment": "main_v2",
+      "run_id": "listing_41869315",
+      "stored": "74e2dd2643c08da058e191b8ed6c3a9599bf2689b863ff29dd88aa1f0258ac13",
+      "calculated": "74e2dd2643c08da058e191b8ed6c3a9599bf2689b863ff29dd88aa1f0258ac13",
+      "match": true
+    },
+    {
+      "experiment": "main_v2",
+      "run_id": "listing_8855792",
+      "stored": "06cb147d62d862762c06b72b43d3251ba269ae4711bc1031c1b79cea7e3f11c6",
+      "calculated": "06cb147d62d862762c06b72b43d3251ba269ae4711bc1031c1b79cea7e3f11c6",
+      "match": true
+    },
+    {
+      "experiment": "paired_human_assisted_v2",
+      "run_id": "heavy_human_assisted",
+      "stored": "d5b41986adf16b74d0ea85d54d7b6d0ca7bc9962a5721b1afd95b18236157355",
+      "calculated": "d5b41986adf16b74d0ea85d54d7b6d0ca7bc9962a5721b1afd95b18236157355",
+      "match": true
+    },
+    {
+      "experiment": "order_only_v2",
+      "run_id": "order_811935840856297078",
+      "stored": "e4433146d4a93e182d6bc0a068500b5bbeda8920cc8a89e984c1a45f1abb25c0",
+      "calculated": "e4433146d4a93e182d6bc0a068500b5bbeda8920cc8a89e984c1a45f1abb25c0",
+      "match": true
+    },
+    {
+      "experiment": "order_only_v2",
+      "run_id": "order_1322576000460694635",
+      "stored": "cb54f1e843650eb4ff3a3561db0d4d50506e15828f5e5912f98e20c446b8b482",
+      "calculated": "cb54f1e843650eb4ff3a3561db0d4d50506e15828f5e5912f98e20c446b8b482",
+      "match": true
+    },
+    {
+      "experiment": "order_only_v2",
+      "run_id": "order_30782781",
+      "stored": "3ec6a7cd2d5727ba133660facabec6388d7ee61e7af312d38efab9ec9525416e",
+      "calculated": "3ec6a7cd2d5727ba133660facabec6388d7ee61e7af312d38efab9ec9525416e",
+      "match": true
+    }
+  ],
+  "rerun_request_hashes": [
+    {
+      "experiment": "main_v2_rerun",
+      "run_id": "listing_1633376659923996824",
+      "stored": "f1d6cbd15d91017deef3764ab91ca4ca75e180e9180063dbd218a06dac58e45c",
+      "calculated": "f1d6cbd15d91017deef3764ab91ca4ca75e180e9180063dbd218a06dac58e45c",
+      "match": true
+    },
+    {
+      "experiment": "main_v2_rerun",
+      "run_id": "listing_1639943466139907458",
+      "stored": "5e99b4d8efb9c35d482844a14a1908bd829293c1373d05df23d529d8e6250fab",
+      "calculated": "5e99b4d8efb9c35d482844a14a1908bd829293c1373d05df23d529d8e6250fab",
+      "match": true
+    },
+    {
+      "experiment": "main_v2_rerun",
+      "run_id": "listing_908313903709894761",
+      "stored": "46e30f9c5c76e5c3c02a712e83baa695e3b6d5adb78f929da7fc1429c1ad9c28",
+      "calculated": "46e30f9c5c76e5c3c02a712e83baa695e3b6d5adb78f929da7fc1429c1ad9c28",
+      "match": true
+    },
+    {
+      "experiment": "main_v2_rerun",
+      "run_id": "listing_1253637362965807207",
+      "stored": "3d9f7cf093f67ef91dbe437734f020b70a3451ae221d4e719658b563a3de13b9",
+      "calculated": "3d9f7cf093f67ef91dbe437734f020b70a3451ae221d4e719658b563a3de13b9",
+      "match": true
+    },
+    {
+      "experiment": "main_v2_rerun",
+      "run_id": "listing_811935840856297078",
+      "stored": "2a780b1f092cd38cdcf99b1acd9d2aea3bf3e3cefed9d68fb1ab08724a805675",
+      "calculated": "2a780b1f092cd38cdcf99b1acd9d2aea3bf3e3cefed9d68fb1ab08724a805675",
+      "match": true
+    },
+    {
+      "experiment": "main_v2_rerun",
+      "run_id": "listing_1322576000460694635",
+      "stored": "cfea7aefecead903e0edf7d23e2af2c227d4f09a97030a8cc6ea9083a11fe82e",
+      "calculated": "cfea7aefecead903e0edf7d23e2af2c227d4f09a97030a8cc6ea9083a11fe82e",
+      "match": true
+    },
+    {
+      "experiment": "main_v2_rerun",
+      "run_id": "listing_54070824",
+      "stored": "7f918bf0e594249385b0ba0f96a715a0ebe6841db0ca606bf2fdcfc20ad4dfed",
+      "calculated": "7f918bf0e594249385b0ba0f96a715a0ebe6841db0ca606bf2fdcfc20ad4dfed",
+      "match": true
+    },
+    {
+      "experiment": "main_v2_rerun",
+      "run_id": "listing_22551754",
+      "stored": "23d5b4698edad83fc996273ec6122f7d4f183c14115b92a7a2a0cccbc462f3da",
+      "calculated": "23d5b4698edad83fc996273ec6122f7d4f183c14115b92a7a2a0cccbc462f3da",
+      "match": true
+    },
+    {
+      "experiment": "main_v2_rerun",
+      "run_id": "listing_30782781",
+      "stored": "4631fa16ac5f70713bc7dee0732f654adfab237782bfb4c691281d2dc9ef3f42",
+      "calculated": "4631fa16ac5f70713bc7dee0732f654adfab237782bfb4c691281d2dc9ef3f42",
+      "match": true
+    },
+    {
+      "experiment": "main_v2_rerun",
+      "run_id": "listing_20910508",
+      "stored": "5e6a9f937873348221b147e35c6bb69ebcb7b580e1bd79bbaf2cc8eff17e285e",
+      "calculated": "5e6a9f937873348221b147e35c6bb69ebcb7b580e1bd79bbaf2cc8eff17e285e",
+      "match": true
+    },
+    {
+      "experiment": "main_v2_rerun",
+      "run_id": "listing_41869315",
+      "stored": "f26ad249855bc67467e522ba69996a6a37403f6d5d2b41ebc1c121234617c92b",
+      "calculated": "f26ad249855bc67467e522ba69996a6a37403f6d5d2b41ebc1c121234617c92b",
+      "match": true
+    },
+    {
+      "experiment": "main_v2_rerun",
+      "run_id": "listing_8855792",
+      "stored": "ae79f4061e462ab98a80b69bb342f4a3a887f971d4da7a9cfe8f5cb1e938bf4c",
+      "calculated": "ae79f4061e462ab98a80b69bb342f4a3a887f971d4da7a9cfe8f5cb1e938bf4c",
+      "match": true
+    },
+    {
+      "experiment": "order_only_v2_rerun",
+      "run_id": "order_811935840856297078",
+      "stored": "a7b3d2a7262f7f10b1a6a6a2c7dbd513327c5499bec2e0be112238830fc2ab76",
+      "calculated": "a7b3d2a7262f7f10b1a6a6a2c7dbd513327c5499bec2e0be112238830fc2ab76",
+      "match": true
+    },
+    {
+      "experiment": "order_only_v2_rerun",
+      "run_id": "order_1322576000460694635",
+      "stored": "58e6f8fd27f1ca1270836e5920140662b36de6374bbb022f753dcc2306774924",
+      "calculated": "58e6f8fd27f1ca1270836e5920140662b36de6374bbb022f753dcc2306774924",
+      "match": true
+    },
+    {
+      "experiment": "order_only_v2_rerun",
+      "run_id": "order_30782781",
+      "stored": "75224374161c27aeb33e16e70b716d4633582ab3ab24589e1ad0d5f5a605911c",
+      "calculated": "75224374161c27aeb33e16e70b716d4633582ab3ab24589e1ad0d5f5a605911c",
+      "match": true
+    }
+  ],
+  "fixed_input_comparisons": {
+    "main": [
+      {
+        "listing_id": "1253637362965807207",
+        "exact_request_match": true,
+        "original_sha256": "3d9f7cf093f67ef91dbe437734f020b70a3451ae221d4e719658b563a3de13b9",
+        "rerun_sha256": "3d9f7cf093f67ef91dbe437734f020b70a3451ae221d4e719658b563a3de13b9"
+      },
+      {
+        "listing_id": "1322576000460694635",
+        "exact_request_match": true,
+        "original_sha256": "cfea7aefecead903e0edf7d23e2af2c227d4f09a97030a8cc6ea9083a11fe82e",
+        "rerun_sha256": "cfea7aefecead903e0edf7d23e2af2c227d4f09a97030a8cc6ea9083a11fe82e"
+      },
+      {
+        "listing_id": "1633376659923996824",
+        "exact_request_match": true,
+        "original_sha256": "f1d6cbd15d91017deef3764ab91ca4ca75e180e9180063dbd218a06dac58e45c",
+        "rerun_sha256": "f1d6cbd15d91017deef3764ab91ca4ca75e180e9180063dbd218a06dac58e45c"
+      },
+      {
+        "listing_id": "1639943466139907458",
+        "exact_request_match": true,
+        "original_sha256": "5e99b4d8efb9c35d482844a14a1908bd829293c1373d05df23d529d8e6250fab",
+        "rerun_sha256": "5e99b4d8efb9c35d482844a14a1908bd829293c1373d05df23d529d8e6250fab"
+      },
+      {
+        "listing_id": "20910508",
+        "exact_request_match": true,
+        "original_sha256": "5e6a9f937873348221b147e35c6bb69ebcb7b580e1bd79bbaf2cc8eff17e285e",
+        "rerun_sha256": "5e6a9f937873348221b147e35c6bb69ebcb7b580e1bd79bbaf2cc8eff17e285e"
+      },
+      {
+        "listing_id": "22551754",
+        "exact_request_match": true,
+        "original_sha256": "23d5b4698edad83fc996273ec6122f7d4f183c14115b92a7a2a0cccbc462f3da",
+        "rerun_sha256": "23d5b4698edad83fc996273ec6122f7d4f183c14115b92a7a2a0cccbc462f3da"
+      },
+      {
+        "listing_id": "30782781",
+        "exact_request_match": true,
+        "original_sha256": "4631fa16ac5f70713bc7dee0732f654adfab237782bfb4c691281d2dc9ef3f42",
+        "rerun_sha256": "4631fa16ac5f70713bc7dee0732f654adfab237782bfb4c691281d2dc9ef3f42"
+      },
+      {
+        "listing_id": "41869315",
+        "exact_request_match": true,
+        "original_sha256": "f26ad249855bc67467e522ba69996a6a37403f6d5d2b41ebc1c121234617c92b",
+        "rerun_sha256": "f26ad249855bc67467e522ba69996a6a37403f6d5d2b41ebc1c121234617c92b"
+      },
+      {
+        "listing_id": "54070824",
+        "exact_request_match": true,
+        "original_sha256": "7f918bf0e594249385b0ba0f96a715a0ebe6841db0ca606bf2fdcfc20ad4dfed",
+        "rerun_sha256": "7f918bf0e594249385b0ba0f96a715a0ebe6841db0ca606bf2fdcfc20ad4dfed"
+      },
+      {
+        "listing_id": "811935840856297078",
+        "exact_request_match": true,
+        "original_sha256": "2a780b1f092cd38cdcf99b1acd9d2aea3bf3e3cefed9d68fb1ab08724a805675",
+        "rerun_sha256": "2a780b1f092cd38cdcf99b1acd9d2aea3bf3e3cefed9d68fb1ab08724a805675"
+      },
+      {
+        "listing_id": "8855792",
+        "exact_request_match": true,
+        "original_sha256": "ae79f4061e462ab98a80b69bb342f4a3a887f971d4da7a9cfe8f5cb1e938bf4c",
+        "rerun_sha256": "ae79f4061e462ab98a80b69bb342f4a3a887f971d4da7a9cfe8f5cb1e938bf4c"
+      },
+      {
+        "listing_id": "908313903709894761",
+        "exact_request_match": true,
+        "original_sha256": "46e30f9c5c76e5c3c02a712e83baa695e3b6d5adb78f929da7fc1429c1ad9c28",
+        "rerun_sha256": "46e30f9c5c76e5c3c02a712e83baa695e3b6d5adb78f929da7fc1429c1ad9c28"
+      }
+    ],
+    "order_only": [
+      {
+        "listing_id": "1322576000460694635",
+        "exact_request_match": true,
+        "original_sha256": "58e6f8fd27f1ca1270836e5920140662b36de6374bbb022f753dcc2306774924",
+        "rerun_sha256": "58e6f8fd27f1ca1270836e5920140662b36de6374bbb022f753dcc2306774924"
+      },
+      {
+        "listing_id": "30782781",
+        "exact_request_match": true,
+        "original_sha256": "75224374161c27aeb33e16e70b716d4633582ab3ab24589e1ad0d5f5a605911c",
+        "rerun_sha256": "75224374161c27aeb33e16e70b716d4633582ab3ab24589e1ad0d5f5a605911c"
+      },
+      {
+        "listing_id": "811935840856297078",
+        "exact_request_match": true,
+        "original_sha256": "a7b3d2a7262f7f10b1a6a6a2c7dbd513327c5499bec2e0be112238830fc2ab76",
+        "rerun_sha256": "a7b3d2a7262f7f10b1a6a6a2c7dbd513327c5499bec2e0be112238830fc2ab76"
+      }
+    ]
+  }
+}
